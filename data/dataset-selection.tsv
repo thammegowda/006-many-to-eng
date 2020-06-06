@@ -1,0 +1,593 @@
+Lang	Train	Dev	Tests	More Dev tests
+deu	 europarl_v10, news_commentary_v14, wmt13_commoncrawl, EESC2017	newstest2018_deen	newstest2019_deen, newstest2014_deen	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2015_deen, newstest2016_deen, newstest2017_deen
+ces	wmt13_commoncrawl, europarl_v10,news_commentary_v14, EESC2017	newstest2018_encs	newstest2019_encs	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2014_csen, newstest2015_csen, newstest2016_csen, newstest2017_csen,
+fra	wmt13_commoncrawl, europarl_v10,news_commentary_v14, OPUS_giga_fren_v2	newstest2013	newstest2014_fren,UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest2011, newstest2012
+spa	wmt13_commoncrawl, europarl_v10, news_commentary_v14, EESC2017	newstest2012	newstest2013, UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest201
+rus	wmt13_commoncrawl, news_commentary_v14, OPUS_UNPC_v1_0	newstest2018_ruen	UNv1_test, newstest2019_ruen	UNv1_dev, newstest2012, newstest2013, newstest2014_ruen, newstest2015_ruen, newstest2016_ruen, newstest2017_ruen
+fin	europarl_v10, EESC2017, rapid2016, OPUS_DGT_v2019	newstest2018_fien	newstest2019_fien	newsdev2015_fien, newstest2015_fien,  newstest2016_fien, newstest2017_fien
+pol	europarl_v10, EESC2017, rapid2016, OPUS_DGT_v2019, OPUS_EUbookshop_v2		newsdev2020_plen	
+por	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016, OPUS_EUbookshop_v2			
+ita	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016			
+ron	GlobalVoices_2018Q4, EESC2017, rapid2016, EMA2016			
+lit	EESC2017, rapid2016, EMA2016, europarl_v10,  OPUS_DGT_v2019	newsdev2019_lten	newstest2019_lten	
+nld	EESC2017, rapid2016, EMA2016, news_commentary_v14, OPUS_DGT_v2019			
+lav	EESC2017, rapid2016, EMA2016, europarl_v7, OPUS_DGT_v2019, OPUS_EMEA_v3	newsdev2017_lven	newstest2017_lven	
+zho	GlobalVoices_2018Q4, news_commentary_v14, OPUS_UNPC_v1_0, OPUS_MultiUN_v1	newstest2018_zhen	newstest2019_zhen, UNv1_test	UNv1_dev, newsdev2017_zhen, newstest2017_zhen
+tur	GlobalVoices_2018Q4, OPUS_Tanzil_v1, OPUS_OpenSubtitles_v2018, OPUS_SETIMES_v2, OPUS_TED2013_v1_1	newstest2017_tren	newstest2018_tren	newsdev2016_tren, newstest2016_tren
+swe	EESC2017, EMA2016, GlobalVoices_2018Q4,rapid2016,OPUS_DGT_v2019			
+est	EESC2017, EMA2016,OPUS_DGT_v2019, OPUS_Europarl_v8, rapid2016	newsdev2018_eten,	newstest2018_eten	
+hun	EESC2017, EMA2016, GlobalVoices_2018Q4, rapid2016, OPUS_DGT_v2019			
+ell	EESC2017, EMA2016, GlobalVoices_2018Q4, rapid2016, OPUS_DGT_v2019			
+slv	EESC2017, EMA2016, OPUS_DGT_v2019,OPUS_EUbookshop_v2, rapid2016			
+bul	EESC2017, EMA2016, GlobalVoices_2018Q4, OPUS_EUbookshop_v2, rapid2016			
+dan	EESC2017, EMA2016, GlobalVoices_2018Q4,rapid2016,OPUS_DGT_v2019			
+ara	GlobalVoices_2018Q4,OPUS_MultiUN_v1, news_commentary_v14,OPUS_UNPC_v1_0	UNv1_dev	UNv1_test	
+slk	EESC2017, EMA2016,rapid2016,OPUS_DGT_v2019,OPUS_EUbookshop_v2			
+hrv	EESC2017, EMA2016,OPUS_DGT_v2019,rapid2016,OPUS_EUbookshop_v2			
+hin	GlobalVoices_2018Q4,JoshuaIndianCorpus_training,pmindia_v1,news_commentary_v14,IITBv1_5_train,JoshuaIndianCorpus_dict	IITBv1_5_dev	IITBv1_5_test	JoshuaIndianCorpus_test,newstest2014_hien, JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
+mlt	EESC2017, EMA2016, rapid2016, OPUS_DGT_v2019, OPUS_EMEA_v3, OPUS_EUbookshop_v2			
+jpn	GlobalVoices_2018Q4, news_commentary_v14, OPUS_OpenSubtitles_v1, OPUS_Tatoeba_v20190709, kftt_v1_train	newsdev2020_jaen	kftt_v1_test	 kftt_v1_dev kftt_v1_tune
+tam	JoshuaIndianCorpus_training, pmindia_v1, wiki_matrix_v1, wiki_titles_v2, JW300,JoshuaIndianCorpus_dict	newsdev2020_taen	JoshuaIndianCorpus_test	JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
+pus	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, bible_clean, gnome, kde4, tatoeba, ted_wmt20	wikipedia_dev_psen	wikipedia_devtest_psen	
+isl	EESC2017, EMA2016,rapid2016,OPUS_Tatoeba_v20190709			
+ben	GlobalVoices_2018Q4, pmindia_v1,JoshuaIndianCorpus_training, OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_dict	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+urd	GlobalVoices_2018Q4,JoshuaIndianCorpus_dict,JoshuaIndianCorpus_training,pmindia_v1,OPUS_Tatoeba_v20190709,JW300,OPUS_Tanzil_v1	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+tel	JW300,OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_training,pmindia_v1, wiki_matrix_v1	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+mal	JW300,OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_training,pmindia_v1, OPUS_Tanzil_v1	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+sqi	OPUS_SETIMES_v2,GlobalVoices_2018Q4,OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
+kaz	news_commentary_v14,wiki_titles_v1, OPUS_Tatoeba_v20190709	newsdev2019_kken, newstest2019_kken		
+srp	GlobalVoices_2018Q4,OPUS_OpenSubtitles_v2018,OPUS_TildeMODEL_v2018,OPUS_Tatoeba_v20190709,OPUS_SETIMES_v2			
+heb	GlobalVoices_2018Q4,OPUS_OpenSubtitles_v2018,OPUS_Tatoeba_v20190709,JW300			
+guj	wiki_titles_v1,JW300,pmindia_v1	 newsdev2019_guen	newstest2019_guen	
+fas	GlobalVoices_2018Q4,OPUS_TEP_v1,OPUS_Tanzil_v1,OPUS_OpenSubtitles_v2018			
+nor	EMA2016,rapid2016,OPUS_OpenSubtitles_v2018,JW300			
+kor	GlobalVoices_2018Q4,JW300,OPUS_Tanzil_v1,OPUS_Tatoeba_v20190709			
+ind	GlobalVoices_2018Q4, JW300,OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
+ukr	JW300,OPUS_OpenSubtitles_v2018,OPUS_TildeMODEL_v2018			
+mkd	GlobalVoices_2018Q4, OPUS_SETIMES_v2, OPUS_Tatoeba_v20190709			
+cat	GlobalVoices_2018Q4, JW300, OPUS_OpenSubtitles_v2018, OPUS_Tatoeba_v20190709			
+khm	GlobalVoices_2018Q4, JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628	wikipedia_dev_kmen	wikipedia_devtest_kmen	
+epo	GlobalVoices_2018Q4, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+xho	OPUS_memat_v1,OPUS_XhosaNavy_v1, JW300			
+vie	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_Wikipedia_v1_0, OPUS_bible_uedin_v1			
+tha	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+gle	OPUS_DGT_v2019, OPUS_EUbookshop_v2, OPUS_EUconst_v1,  OPUS_ParaCrawl_v5,  OPUS_Tatoeba_v20190709, paracrawl_v6			
+amh	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+afr	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_SPC_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+swa	GlobalVoices_2018Q4, JW300, OPUS_EUbookshop_v2, OPUS_GlobalVoices_v2017q3,  OPUS_Tanzil_v1, OPUS_wikimedia_v20190628			
+sin	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+mar	JW300,   OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, pmindia_v1			
+kur	GlobalVoices_2018Q4, OPUS_Bianet_v1,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+hye	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+eus	OPUS_EhuHac_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+bos	OPUS_EUbookshop_v2, OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_SETIMES_v2, OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
+tgl	JW300, OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+tgk	JW300,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+pan	GlobalVoices_2018Q4, JW300,   OPUS_Tatoeba_v20190709, pmindia_v1			
+ori	GlobalVoices_2018Q4, OPUS_GlobalVoices_v2017q3,   OPUS_Tatoeba_v20190709, pmindia_v1			
+nep	GlobalVoices_2018Q4, JW300,   OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+mya	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+kat	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709			
+kan	JW300,   OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, pmindia_v1			
+hau	JW300,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+bre	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+asm	JW300,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, pmindia_v1			
+zul	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+uzb	OPUS_GNOME_v1,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+tat	JW300,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+som	OPUS_GNOME_v1,  OPUS_Tanzil_v1, OPUS_bible_uedin_v1, OPUS_infopankki_v1, OPUS_wikimedia_v20190628			
+msa	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tanzil_v1			
+mlg	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tatoeba_v20190709			
+kin	JW300,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+glg	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709			
+gla	OPUS_EUbookshop_v2,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+cym	JW300, OPUS_EUbookshop_v2,   OPUS_Tatoeba_v20190709			
+yor	GlobalVoices_2018Q4, JW300,  OPUS_Tatoeba_v20190709			
+uig	OPUS_GNOME_v1,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+tuk	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+tso	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+sna	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+oci	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+nno	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+mri	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+mon	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+lug	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+lat	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+lao	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+kir	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ibo	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+bel	OPUS_EUbookshop_v2,   OPUS_Tatoeba_v20190709			
+aze	JW300,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
+ast	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+yid	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+wln	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+tir	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+tet	GlobalVoices_2018Q4,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+snd	 OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+smo	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+que	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+pap	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+oss	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+nya	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+nso	JW300,  OPUS_wikimedia_v20190628			
+mai	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ltz	  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+kal	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ina	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+iku	 newsdev2020_eniu, newsdev2020_iuen, wiki_titles_v2			
+ido	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+hat	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+grn	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+fry	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+fao	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ewe	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+div	OPUS_GNOME_v1,  OPUS_Tanzil_v1, OPUS_wikimedia_v20190628			
+ceb	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+bod	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+bak	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+aym	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_wikimedia_v20190628			
+arg	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+wol	 OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+ven	JW300,  OPUS_wikimedia_v20190628			
+ton	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+szl	OPUS_GNOME_v1,  OPUS_wikimedia_v20190628			
+srd	 OPUS_sardware_v1, OPUS_wikimedia_v20190628			
+sme	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+sco	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+san	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+pam	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+orm	JW300,  OPUS_wikimedia_v20190628			
+nds	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709			
+nav	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+lin	JW300,  OPUS_Tatoeba_v20190709			
+ksh	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+kab	OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+jbo	OPUS_GNOME_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+jav	JW300,  OPUS_Tatoeba_v20190709			
+haw	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+fur	OPUS_GNOME_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+fil	GlobalVoices_2018Q4, OPUS_GlobalVoices_v2017q3, 			
+fij	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+dzo	OPUS_GNOME_v1,  OPUS_wikimedia_v20190628			
+csb	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709			
+crh	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709			
+cor	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+chv	JW300,  OPUS_Tatoeba_v20190709			
+chr	OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+cha	 OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+ang	OPUS_GNOME_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+abk	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+war	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+vol	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+vec	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+umb	JW300,  OPUS_Tatoeba_v20190709			
+udm	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+tyv	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+twi	JW300,  OPUS_wikimedia_v20190628			
+tpi	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+tlh	 OPUS_Tatoeba_v20190709			
+sun	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ssw	JW300, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+sag	JW300,  OPUS_Tatoeba_v20190709			
+run	JW300,  OPUS_Tatoeba_v20190709			
+rom	OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+roh	 OPUS_Tatoeba_v20190709			
+pms	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+nan	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+mfe	JW300,  OPUS_Tatoeba_v20190709			
+mah	JW300, OPUS_Tatoeba_v20190709			
+lld	 OPUS_Tatoeba_v20190709			
+lim	OPUS_GNOME_v1, 			
+lij	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+kon	JW300			
+kik	JW300,  OPUS_wikimedia_v20190628			
+kek	JW300, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+kas	OPUS_GNOME_v1, OPUS_wikimedia_v20190628			
+ilo	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ile	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+hsb	 OPUS_Tatoeba_v20190709			
+hil	JW300, OPUS_Tatoeba_v20190709			
+glv	OPUS_GNOME_v1, OPUS_bible_uedin_v1			
+ful	 OPUS_wikimedia_v20190628			
+dsb	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+cos	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+che	 OPUS_Tatoeba_v20190709			
+brx	OPUS_GNOME_v1, OPUS_Tatoeba_v20190709			
+bho	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+bem	JW300			
+aka	 OPUS_wikimedia_v20190628			
+zza	OPUS_Tatoeba_v20190709			
+zlm	JW300, OPUS_Tatoeba_v20190709			
+zha	 OPUS_wikimedia_v20190628			
+yue	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+xmf	JW300, OPUS_wikimedia_v20190628			
+xal	OPUS_Tatoeba_v20190709			
+wuu	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+wal	JW300, OPUS_bible_uedin_v1			
+tvl	JW300, OPUS_Tatoeba_v20190709			
+tum	JW300, OPUS_wikimedia_v20190628			
+tsn	JW300, OPUS_wikimedia_v20190628			
+tah	JW300, OPUS_Tatoeba_v20190709			
+syr	OPUS_Ubuntu_v14_10, OPUS_bible_uedin_v1			
+srn	JW300, OPUS_wikimedia_v20190628			
+shs	OPUS_Tatoeba_v20190709			
+sgs	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+scn	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+sah	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+quz	JW300			
+quc	OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+pnb	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+pes	OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+pdc	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+pag	JW300, OPUS_Tatoeba_v20190709			
+nov	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+niu	JW300, OPUS_Tatoeba_v20190709			
+nhn	OPUS_GNOME_v1			
+ngu	JW300, OPUS_Tatoeba_v20190709			
+nch	JW300, OPUS_Tatoeba_v20190709			
+nau	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+nap	OPUS_Ubuntu_v14_10, OPUS_wikimedia_v20190628			
+myv	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+mus				
+mos	JW300, 			
+min	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+mhr	OPUS_Tatoeba_v20190709			
+mdf	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+mam	JW300, OPUS_bible_uedin_v1			
+mad	 OPUS_Tatoeba_v20190709			
+lzh	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+luo	JW300, 			
+ltg				
+lmo	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+lkt	 OPUS_Tatoeba_v20190709			
+lfn	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+lad	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+kua	JW300, 			
+kau	OPUS_GNOME_v1, 			
+kam	JW300, OPUS_Tatoeba_v20190709			
+jam	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ipk	 OPUS_wikimedia_v20190628			
+iba	JW300, OPUS_Tatoeba_v20190709			
+hne	OPUS_KDE4_v2			
+hmo	JW300, 			
+hif	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+her	JW300, 			
+guc	JW300			
+gsw	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+grc	OPUS_Tatoeba_v20190709			
+got	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+gil	JW300, OPUS_Tatoeba_v20190709			
+frm	OPUS_Tatoeba_v20190709			
+ext	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+efi	JW300, 			
+djk	JW300, OPUS_bible_uedin_v1			
+cnh	JW300, 			
+cho	 OPUS_Tatoeba_v20190709			
+cak	JW300, OPUS_bible_uedin_v1			
+bug	 OPUS_wikimedia_v20190628			
+bua	OPUS_Tatoeba_v20190709			
+bis	JW300, 			
+bcl	JW300, OPUS_wikimedia_v20190628			
+bar	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+bam	 OPUS_Tatoeba_v20190709			
+bal	OPUS_GNOME_v1			
+ase	JW300, 			
+arz	 OPUS_Tatoeba_v20190709			
+ary	OPUS_Tatoeba_v20190709			
+arq	 OPUS_Tatoeba_v20190709			
+ace	OPUS_Ubuntu_v14_10, OPUS_wikimedia_v20190628			
+	OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
+zsm	OPUS_Tatoeba_v20190709			
+zsl	JW300			
+zpa	JW300			
+zne	JW300			
+zib	JW300			
+zam				
+zai	JW300			
+yua	JW300			
+yap	JW300			
+yao	JW300			
+wls	JW300			
+wkd				
+wes	JW300			
+wae	OPUS_Ubuntu_v14_10			
+vsl	JW300			
+vro	OPUS_Tatoeba_v20190709			
+vmw	JW300			
+vls				
+usp	OPUS_bible_uedin_v1			
+urh	JW300			
+tzo	JW300			
+tzl	OPUS_Tatoeba_v20190709			
+tzh	JW300			
+ttj	JW300			
+tsz	JW300			
+tss	JW300			
+tsc	JW300			
+trv	OPUS_Ubuntu_v14_10			
+tpw	OPUS_Tatoeba_v20190709			
+top	JW300			
+toj	JW300			
+toi	JW300			
+toh	JW300			
+tog	JW300			
+tmw	OPUS_Tatoeba_v20190709			
+tmh	OPUS_bible_uedin_v1			
+tly	OPUS_Tatoeba_v20190709			
+tll	JW300			
+tiv	JW300			
+tdt	JW300			
+tcy	OPUS_wikimedia_v20190628			
+tcf	JW300			
+sxn	JW300			
+swh	OPUS_Tatoeba_v20190709			
+swg	OPUS_Tatoeba_v20190709			
+swc	JW300			
+svk	JW300			
+sux	OPUS_Tatoeba_v20190709			
+ssp	JW300			
+srm	JW300			
+sot				
+sop	JW300			
+sml	OPUS_Ubuntu_v14_10			
+sma	OPUS_Tatoeba_v20190709			
+sjn	OPUS_Tatoeba_v20190709			
+sid	JW300			
+shn	OPUS_Ubuntu_v14_10			
+shi	OPUS_bible_uedin_v1			
+sfs	JW300			
+seh	JW300			
+sat	OPUS_wikimedia_v20190628			
+rup				
+rue	OPUS_Tatoeba_v20190709			
+rsl	JW300			
+rnd	JW300			
+rmy	OPUS_wikimedia_v20190628			
+rms	JW300			
+rmn	JW300			
+rif	OPUS_Tatoeba_v20190709			
+rar	JW300			
+rap	OPUS_Tatoeba_v20190709			
+qya	OPUS_Tatoeba_v20190709			
+qvi	JW300			
+quy	JW300			
+quw	OPUS_bible_uedin_v1			
+qug	JW300			
+pys	JW300			
+psr	JW300			
+psp	JW300			
+pso	JW300			
+prs				
+prl	JW300			
+prg	OPUS_Tatoeba_v20190709			
+ppl	OPUS_Tatoeba_v20190709			
+ppk	OPUS_bible_uedin_v1			
+pot	OPUS_bible_uedin_v1			
+pon	JW300			
+pnt	OPUS_wikimedia_v20190628			
+pmy	OPUS_Ubuntu_v14_10			
+plt	OPUS_bible_uedin_v1			
+pli				
+pis	JW300			
+pih	OPUS_wikimedia_v20190628			
+pfl	OPUS_wikimedia_v20190628			
+pdt	JW300			
+pcm	JW300			
+pck	OPUS_bible_uedin_v1			
+pau	OPUS_Tatoeba_v20190709			
+ota	OPUS_Tatoeba_v20190709			
+orv	OPUS_Tatoeba_v20190709			
+oke	JW300			
+oji	OPUS_Ubuntu_v14_10			
+ojb	OPUS_bible_uedin_v1			
+oar	OPUS_Tatoeba_v20190709			
+nzi	JW300			
+nyu	JW300			
+nyn	JW300			
+nyk	JW300			
+nst	OPUS_Tatoeba_v20190709			
+npi	OPUS_Tatoeba_v20190709			
+non	OPUS_Tatoeba_v20190709			
+nog	OPUS_Tatoeba_v20190709			
+nlv	OPUS_Tatoeba_v20190709			
+nij	JW300			
+nia	JW300			
+nhg	OPUS_bible_uedin_v1			
+ngt	OPUS_Tatoeba_v20190709			
+ngl	JW300			
+new	OPUS_wikimedia_v20190628			
+ndo	JW300			
+ndc	JW300			
+ncx	JW300			
+ncs	JW300			
+ncj	JW300			
+nba	JW300			
+mzy	JW300			
+mzn	OPUS_wikimedia_v20190628			
+mxv	JW300			
+mww	OPUS_Tatoeba_v20190709			
+mwl	OPUS_Tatoeba_v20190709			
+mvv	OPUS_Tatoeba_v20190709			
+mrj	OPUS_wikimedia_v20190628			
+moh				
+mnw	OPUS_Tatoeba_v20190709			
+mni	pmindia_v1			
+miq	OPUS_Ubuntu_v14_10			
+mic	OPUS_Tatoeba_v20190709			
+mgr	JW300			
+mgm	OPUS_Tatoeba_v20190709			
+mfs	JW300			
+men	JW300			
+mco	JW300			
+max	OPUS_Tatoeba_v20190709			
+mau	JW300			
+luy				
+lus	JW300			
+lun	JW300			
+lue	JW300			
+lub	JW300			
+lua	JW300			
+lsp	JW300			
+lrc	OPUS_wikimedia_v20190628			
+loz	JW300			
+liv	OPUS_Tatoeba_v20190709			
+lez	OPUS_wikimedia_v20190628			
+ldn	OPUS_Tatoeba_v20190709			
+lbe	OPUS_wikimedia_v20190628			
+lam	JW300			
+kwy	JW300			
+kwn	JW300			
+kvk	JW300			
+kum	OPUS_Tatoeba_v20190709			
+ksw	JW300			
+kss	JW300			
+krl	OPUS_Tatoeba_v20190709			
+kri	JW300			
+kqn	JW300			
+kpv	OPUS_Tatoeba_v20190709			
+koo	JW300			
+kom	OPUS_wikimedia_v20190628			
+kok	OPUS_Ubuntu_v14_10			
+koi	OPUS_Tatoeba_v20190709			
+kmr	JW300			
+kmb	JW300			
+kjh	OPUS_Tatoeba_v20190709			
+kha	OPUS_Tatoeba_v20190709			
+kea	JW300			
+kbp	JW300			
+kbh	OPUS_bible_uedin_v1			
+kac	JW300			
+jsl	JW300			
+jiv	OPUS_bible_uedin_v1			
+jdt	OPUS_Tatoeba_v20190709			
+jak	OPUS_bible_uedin_v1			
+izh	OPUS_Tatoeba_v20190709			
+iso	JW300			
+ish	JW300			
+ise	JW300			
+ins	JW300			
+inl	JW300			
+inh				
+ike	OPUS_Tatoeba_v20190709			
+ibg	JW300			
+hup				
+hsn	OPUS_Tatoeba_v20190709			
+hsh	JW300			
+hrx	OPUS_Tatoeba_v20190709			
+hoc	OPUS_Tatoeba_v20190709			
+hnj	OPUS_Tatoeba_v20190709			
+hmn	JW300			
+hds	JW300			
+hak	OPUS_Tatoeba_v20190709			
+hai				
+gym	JW300			
+guw	JW300			
+gug	JW300			
+gss	JW300			
+gsm	JW300			
+gsg	JW300			
+gos	OPUS_Tatoeba_v20190709			
+gor	OPUS_wikimedia_v20190628			
+gom	OPUS_wikimedia_v20190628			
+glk	OPUS_wikimedia_v20190628			
+gcf	OPUS_Tatoeba_v20190709			
+gbm	OPUS_Tatoeba_v20190709			
+gbi	OPUS_bible_uedin_v1			
+gan	OPUS_Tatoeba_v20190709			
+gaa	JW300			
+fuv	OPUS_Tatoeba_v20190709			
+fuc	OPUS_Tatoeba_v20190709			
+fsl	JW300			
+fse	JW300			
+frp	OPUS_Ubuntu_v14_10			
+fon	JW300			
+fkv	OPUS_Tatoeba_v20190709			
+fcs	JW300			
+esn	JW300			
+egl	OPUS_Tatoeba_v20190709			
+ecs	JW300			
+dyu	JW300			
+dws	OPUS_Tatoeba_v20190709			
+dua	JW300			
+dty	OPUS_wikimedia_v20190628			
+dtp	OPUS_Tatoeba_v20190709			
+dop	OPUS_bible_uedin_v1			
+dng	OPUS_Tatoeba_v20190709			
+dje	OPUS_bible_uedin_v1			
+diq	OPUS_wikimedia_v20190628			
+din	OPUS_wikimedia_v20190628			
+dik	OPUS_bible_uedin_v1			
+dhv	JW300			
+ctu	JW300			
+csr	JW300			
+csn	JW300			
+csl	JW300			
+csg	JW300			
+csf	JW300			
+cse	JW300			
+crs	JW300			
+cre				
+cop	OPUS_bible_uedin_v1			
+cni	OPUS_bible_uedin_v1			
+cmn	OPUS_Tatoeba_v20190709			
+cku				
+ckt	OPUS_Tatoeba_v20190709			
+ckb	OPUS_Ubuntu_v14_10			
+cjy	OPUS_Tatoeba_v20190709			
+cjp	OPUS_bible_uedin_v1			
+cjk	JW300			
+chy	OPUS_wikimedia_v20190628			
+chw	JW300			
+chu				
+chq	OPUS_bible_uedin_v1			
+chk	JW300			
+cdo	OPUS_wikimedia_v20190628			
+cce	JW300			
+cbk	OPUS_Tatoeba_v20190709			
+cab	JW300			
+bzs	JW300			
+bzj	JW300			
+byn	OPUS_Ubuntu_v14_10			
+bxr	OPUS_wikimedia_v20190628			
+bvy	OPUS_Tatoeba_v20190709			
+bvl	JW300			
+bum	JW300			
+btx	JW300			
+bts	JW300			
+bsn	OPUS_bible_uedin_v1			
+bpy	OPUS_wikimedia_v20190628			
+bin	JW300			
+bhw	JW300			
+bfi	JW300			
+bci	JW300			
+bbc	JW300			
+bas	JW300			
+awa	OPUS_Tatoeba_v20190709			
+avk	OPUS_Tatoeba_v20190709			
+ave				
+ava				
+atj	OPUS_wikimedia_v20190628			
+asf	JW300			
+arn	JW300			
+arc	OPUS_wikimedia_v20190628			
+apc	OPUS_Tatoeba_v20190709			
+aoz	OPUS_Tatoeba_v20190709			
+amu	OPUS_bible_uedin_v1			
+ami	JW300			
+alz	JW300			
+alt	JW300			
+aln	OPUS_Tatoeba_v20190709			
+akl	OPUS_Tatoeba_v20190709			
+ake	OPUS_bible_uedin_v1			
+ain	OPUS_Tatoeba_v20190709			
+agr	OPUS_bible_uedin_v1			
+afh	OPUS_Tatoeba_v20190709			
+afb	OPUS_Tatoeba_v20190709			
+aed	JW300			
+aeb				
+ady	OPUS_Tatoeba_v20190709			
+ada	JW300			
+acu	OPUS_bible_uedin_v1			
+acm	OPUS_Tatoeba_v20190709			
+ach	JW300			
+aar				
