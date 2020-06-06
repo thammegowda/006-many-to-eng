@@ -2,10 +2,10 @@ Lang	Train	Dev	Tests	More Dev tests
 deu	 europarl_v10, news_commentary_v14, wmt13_commoncrawl, EESC2017	newstest2018_deen	newstest2019_deen, newstest2014_deen	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2015_deen, newstest2016_deen, newstest2017_deen
 ces	wmt13_commoncrawl, europarl_v10,news_commentary_v14, EESC2017	newstest2018_encs	newstest2019_encs	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2014_csen, newstest2015_csen, newstest2016_csen, newstest2017_csen,
 fra	wmt13_commoncrawl, europarl_v10,news_commentary_v14, OPUS_giga_fren_v2	newstest2013	newstest2014_fren,UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest2011, newstest2012
-spa	wmt13_commoncrawl, europarl_v10, news_commentary_v14, EESC2017	newstest2012	newstest2013, UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest201
+spa	wmt13_commoncrawl, news_commentary_v14, EESC2017	newstest2012	newstest2013, UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest201
 rus	wmt13_commoncrawl, news_commentary_v14, OPUS_UNPC_v1_0	newstest2018_ruen	UNv1_test, newstest2019_ruen	UNv1_dev, newstest2012, newstest2013, newstest2014_ruen, newstest2015_ruen, newstest2016_ruen, newstest2017_ruen
 fin	europarl_v10, EESC2017, rapid2016, OPUS_DGT_v2019	newstest2018_fien	newstest2019_fien	newsdev2015_fien, newstest2015_fien,  newstest2016_fien, newstest2017_fien
-pol	europarl_v10, EESC2017, rapid2016, OPUS_DGT_v2019, OPUS_EUbookshop_v2		newsdev2020_plen	
+pol	europarl_v10, EESC2017, rapid2019, OPUS_DGT_v2019, OPUS_EUbookshop_v2		newsdev2020_plen	
 por	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016, OPUS_EUbookshop_v2			
 ita	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016			
 ron	GlobalVoices_2018Q4, EESC2017, rapid2016, EMA2016			
@@ -24,7 +24,7 @@ dan	EESC2017, EMA2016, GlobalVoices_2018Q4,rapid2016,OPUS_DGT_v2019
 ara	GlobalVoices_2018Q4,OPUS_MultiUN_v1, news_commentary_v14,OPUS_UNPC_v1_0	UNv1_dev	UNv1_test	
 slk	EESC2017, EMA2016,rapid2016,OPUS_DGT_v2019,OPUS_EUbookshop_v2			
 hrv	EESC2017, EMA2016,OPUS_DGT_v2019,rapid2016,OPUS_EUbookshop_v2			
-hin	GlobalVoices_2018Q4,JoshuaIndianCorpus_training,pmindia_v1,news_commentary_v14,IITBv1_5_train,JoshuaIndianCorpus_dict	IITBv1_5_dev	IITBv1_5_test	JoshuaIndianCorpus_test,newstest2014_hien, JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
+hin	GlobalVoices_2018Q4,JoshuaIndianCorpus_training,pmindia_v1,news_commentary_v14,IITBv1_5_train	IITBv1_5_dev	IITBv1_5_test	JoshuaIndianCorpus_test,newstest2014_hien, JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
 mlt	EESC2017, EMA2016, rapid2016, OPUS_DGT_v2019, OPUS_EMEA_v3, OPUS_EUbookshop_v2			
 jpn	GlobalVoices_2018Q4, news_commentary_v14, OPUS_OpenSubtitles_v1, OPUS_Tatoeba_v20190709, kftt_v1_train	newsdev2020_jaen	kftt_v1_test	 kftt_v1_dev kftt_v1_tune
 tam	JoshuaIndianCorpus_training, pmindia_v1, wiki_matrix_v1, wiki_titles_v2, JW300,JoshuaIndianCorpus_dict	newsdev2020_taen	JoshuaIndianCorpus_test	JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
@@ -276,7 +276,6 @@ arz	 OPUS_Tatoeba_v20190709
 ary	OPUS_Tatoeba_v20190709			
 arq	 OPUS_Tatoeba_v20190709			
 ace	OPUS_Ubuntu_v14_10, OPUS_wikimedia_v20190628			
-	OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
 zsm	OPUS_Tatoeba_v20190709			
 zsl	JW300			
 zpa	JW300			
