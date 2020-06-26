@@ -1,4 +1,5 @@
 
+
 # Preprocessing:
 - Unescape XML / HTML
 - Normalize puntuations
@@ -8,10 +9,17 @@
 - Aggressive hyphen split
 
 
-# Clearning
+
+# Cleaning
  - URLs
  - Web page stuff: HTML, CSS, Javascript
  - Copy
  - Abnormal sentence ratios
+ - deduplicate 
+ - remove test / held-out sentences 
  
-# 
+ 
+#  Setup 
+```
+pip install git+
+```
