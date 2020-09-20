@@ -11,6 +11,8 @@ exit_log() {
     exit $1
 }
 
+# use mtdata 0.2.7 (or maybe newer)
+
 tool_names=( parallel awkg mtdata )
 for tool in ${tool_names[@]} ; do
     which $tool &> /dev/null || exit_log 2 "$tool is required; please install"
@@ -31,7 +33,7 @@ out_dir=f'${OUT_DIR}/{lang}-eng'
 
 if train and not Path(f'{out_dir}/mtdata.signature.txt').exists():
    train = ' '.join([t.strip() for t in train.split(',')])
-   cmd = f'mtdata get -l {lang}-eng -tr {train} -o {out_dir}'
+   cmd = f'mtdata get -l {lang}-eng -tr {train} -o {out_dir} --merge '
    heldout = (test or '').split(',') + (dev or '').split(',')
    heldout = ' '.join(h.strip() for h in heldout if h.strip())
    if heldout:

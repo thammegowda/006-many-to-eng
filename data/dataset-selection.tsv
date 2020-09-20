@@ -1,106 +1,106 @@
 Lang	Train	Dev	Tests	More Dev tests
-deu	 europarl_v10, news_commentary_v14, wmt13_commoncrawl, EESC2017	newstest2018_deen	newstest2019_deen, newstest2014_deen	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2015_deen, newstest2016_deen, newstest2017_deen
-ces	wmt13_commoncrawl, europarl_v10,news_commentary_v14, EESC2017	newstest2018_encs	newstest2019_encs	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2014_csen, newstest2015_csen, newstest2016_csen, newstest2017_csen,
-fra	wmt13_commoncrawl, europarl_v10,news_commentary_v14, OPUS_giga_fren_v2	newstest2013	newstest2014_fren,UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest2011, newstest2012
-spa	wmt13_commoncrawl, news_commentary_v14, EESC2017	newstest2012	newstest2013, UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest201
-rus	wmt13_commoncrawl, news_commentary_v14, OPUS_UNPC_v1_0	newstest2018_ruen	UNv1_test, newstest2019_ruen	UNv1_dev, newstest2012, newstest2013, newstest2014_ruen, newstest2015_ruen, newstest2016_ruen, newstest2017_ruen
-fin	europarl_v10, EESC2017, rapid2016, OPUS_DGT_v2019	newstest2018_fien	newstest2019_fien	newsdev2015_fien, newstest2015_fien,  newstest2016_fien, newstest2017_fien
-pol	europarl_v10, EESC2017, rapid2019, OPUS_DGT_v2019, OPUS_EUbookshop_v2		newsdev2020_plen	
-por	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016, OPUS_EUbookshop_v2			
-ita	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016			
-ron	GlobalVoices_2018Q4, EESC2017, rapid2016, EMA2016			
-lit	EESC2017, rapid2016, EMA2016, europarl_v10,  OPUS_DGT_v2019	newsdev2019_lten	newstest2019_lten	
-nld	EESC2017, rapid2016, EMA2016, news_commentary_v14, OPUS_DGT_v2019			
-lav	EESC2017, rapid2016, EMA2016, europarl_v7, OPUS_DGT_v2019, OPUS_EMEA_v3	newsdev2017_lven	newstest2017_lven	
-zho	GlobalVoices_2018Q4, news_commentary_v14, OPUS_UNPC_v1_0, OPUS_MultiUN_v1	newstest2018_zhen	newstest2019_zhen, UNv1_test	UNv1_dev, newsdev2017_zhen, newstest2017_zhen
-tur	GlobalVoices_2018Q4, OPUS_Tanzil_v1, OPUS_OpenSubtitles_v2018, OPUS_SETIMES_v2, OPUS_TED2013_v1_1	newstest2017_tren	newstest2018_tren	newsdev2016_tren, newstest2016_tren
-swe	EESC2017, EMA2016, GlobalVoices_2018Q4,rapid2016,OPUS_DGT_v2019			
-est	EESC2017, EMA2016,OPUS_DGT_v2019, OPUS_Europarl_v8, rapid2016	newsdev2018_eten,	newstest2018_eten	
-hun	EESC2017, EMA2016, GlobalVoices_2018Q4, rapid2016, OPUS_DGT_v2019			
-ell	EESC2017, EMA2016, GlobalVoices_2018Q4, rapid2016, OPUS_DGT_v2019			
-slv	EESC2017, EMA2016, OPUS_DGT_v2019,OPUS_EUbookshop_v2, rapid2016			
-bul	EESC2017, EMA2016, GlobalVoices_2018Q4, OPUS_EUbookshop_v2, rapid2016			
-dan	EESC2017, EMA2016, GlobalVoices_2018Q4,rapid2016,OPUS_DGT_v2019			
-ara	GlobalVoices_2018Q4,OPUS_MultiUN_v1, news_commentary_v14,OPUS_UNPC_v1_0	UNv1_dev	UNv1_test	
-slk	EESC2017, EMA2016,rapid2016,OPUS_DGT_v2019,OPUS_EUbookshop_v2			
-hrv	EESC2017, EMA2016,OPUS_DGT_v2019,rapid2016,OPUS_EUbookshop_v2			
-hin	GlobalVoices_2018Q4,JoshuaIndianCorpus_training,pmindia_v1,news_commentary_v14,IITBv1_5_train	IITBv1_5_dev	IITBv1_5_test	JoshuaIndianCorpus_test,newstest2014_hien, JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
-mlt	EESC2017, EMA2016, rapid2016, OPUS_DGT_v2019, OPUS_EMEA_v3, OPUS_EUbookshop_v2			
-jpn	GlobalVoices_2018Q4, news_commentary_v14, OPUS_OpenSubtitles_v1, OPUS_Tatoeba_v20190709, kftt_v1_train	newsdev2020_jaen	kftt_v1_test	 kftt_v1_dev kftt_v1_tune
-tam	JoshuaIndianCorpus_training, pmindia_v1, wiki_matrix_v1, wiki_titles_v2, JW300,JoshuaIndianCorpus_dict	newsdev2020_taen	JoshuaIndianCorpus_test	JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
-pus	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, bible_clean, gnome, kde4, tatoeba, ted_wmt20	wikipedia_dev_psen	wikipedia_devtest_psen	
-isl	EESC2017, EMA2016,rapid2016,OPUS_Tatoeba_v20190709			
-ben	GlobalVoices_2018Q4, pmindia_v1,JoshuaIndianCorpus_training, OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_dict	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
-urd	GlobalVoices_2018Q4,JoshuaIndianCorpus_dict,JoshuaIndianCorpus_training,pmindia_v1,OPUS_Tatoeba_v20190709,JW300,OPUS_Tanzil_v1	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
-tel	JW300,OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_training,pmindia_v1, wiki_matrix_v1	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
-mal	JW300,OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_training,pmindia_v1, OPUS_Tanzil_v1	JoshuaIndianCorpus_dev	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
-sqi	OPUS_SETIMES_v2,GlobalVoices_2018Q4,OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
-kaz	news_commentary_v14,wiki_titles_v1, OPUS_Tatoeba_v20190709	newsdev2019_kken, newstest2019_kken		
-srp	GlobalVoices_2018Q4,OPUS_OpenSubtitles_v2018,OPUS_TildeMODEL_v2018,OPUS_Tatoeba_v20190709,OPUS_SETIMES_v2			
-heb	GlobalVoices_2018Q4,OPUS_OpenSubtitles_v2018,OPUS_Tatoeba_v20190709,JW300			
-guj	wiki_titles_v1,JW300,pmindia_v1	 newsdev2019_guen	newstest2019_guen	
-fas	GlobalVoices_2018Q4,OPUS_TEP_v1,OPUS_Tanzil_v1,OPUS_OpenSubtitles_v2018			
-nor	EMA2016,rapid2016,OPUS_OpenSubtitles_v2018,JW300			
-kor	GlobalVoices_2018Q4,JW300,OPUS_Tanzil_v1,OPUS_Tatoeba_v20190709			
-ind	GlobalVoices_2018Q4, JW300,OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
-ukr	JW300,OPUS_OpenSubtitles_v2018,OPUS_TildeMODEL_v2018			
-mkd	GlobalVoices_2018Q4, OPUS_SETIMES_v2, OPUS_Tatoeba_v20190709			
-cat	GlobalVoices_2018Q4, JW300, OPUS_OpenSubtitles_v2018, OPUS_Tatoeba_v20190709			
-khm	GlobalVoices_2018Q4, JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628	wikipedia_dev_kmen	wikipedia_devtest_kmen	
-epo	GlobalVoices_2018Q4, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
-xho	OPUS_memat_v1,OPUS_XhosaNavy_v1, JW300			
-vie	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_Wikipedia_v1_0, OPUS_bible_uedin_v1			
-tha	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
-gle	OPUS_DGT_v2019, OPUS_EUbookshop_v2, OPUS_EUconst_v1,  OPUS_ParaCrawl_v5,  OPUS_Tatoeba_v20190709, paracrawl_v6			
-amh	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
-afr	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_SPC_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
-swa	GlobalVoices_2018Q4, JW300, OPUS_EUbookshop_v2, OPUS_GlobalVoices_v2017q3,  OPUS_Tanzil_v1, OPUS_wikimedia_v20190628			
-sin	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-mar	JW300,   OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, pmindia_v1			
-kur	GlobalVoices_2018Q4, OPUS_Bianet_v1,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-hye	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
-eus	OPUS_EhuHac_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
-bos	OPUS_EUbookshop_v2, OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_SETIMES_v2, OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
-tgl	JW300, OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
-tgk	JW300,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-pan	GlobalVoices_2018Q4, JW300,   OPUS_Tatoeba_v20190709, pmindia_v1			
-ori	GlobalVoices_2018Q4, OPUS_GlobalVoices_v2017q3,   OPUS_Tatoeba_v20190709, pmindia_v1			
-nep	GlobalVoices_2018Q4, JW300,   OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
-mya	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
-kat	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709			
-kan	JW300,   OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, pmindia_v1			
-hau	JW300,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-bre	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-asm	JW300,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, pmindia_v1			
-zul	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
-uzb	OPUS_GNOME_v1,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-tat	JW300,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+deu	 europarl_v10, news_commentary_v14, wmt13_commoncrawl, EESC2017, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2018_deen, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2019_deen, newstest2014_deen	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2015_deen, newstest2016_deen, newstest2017_deen
+ces	wmt13_commoncrawl, europarl_v10,news_commentary_v14,europarl_v7, EESC2017, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2018_encs, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2019_encs	newstest2009, newstest2010, newstest2011, newstest2012, newstest2013, newstest2014_csen, newstest2015_csen, newstest2016_csen, newstest2017_csen,
+fra	wmt13_commoncrawl, europarl_v10,news_commentary_v14, OPUS_giga_fren_v2, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2013, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2014_fren,UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest2011, newstest2012
+spa	wmt13_commoncrawl, news_commentary_v14, EESC2017, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2012, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2013, UNv1_test	UNv1_dev, newstest2009, newstest2010, newstest201
+rus	wmt13_commoncrawl, news_commentary_v14, OPUS_UNPC_v1_0, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2018_ruen, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	UNv1_test, newstest2019_ruen	UNv1_dev, newstest2012, newstest2013, newstest2014_ruen, newstest2015_ruen, newstest2016_ruen, newstest2017_ruen
+fin	europarl_v10, EESC2017, rapid2016, OPUS_DGT_v2019,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2018_fien, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2019_fien	newsdev2015_fien, newstest2015_fien,  newstest2016_fien, newstest2017_fien
+pol	europarl_v10, EESC2017, rapid2019, OPUS_DGT_v2019, OPUS_EUbookshop_v2, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newsdev2020_plen	
+por	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016, OPUS_EUbookshop_v2,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+ita	news_commentary_v14, GlobalVoices_2018Q4, EESC2017, rapid2016,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+ron	GlobalVoices_2018Q4, EESC2017, rapid2016, EMA2016,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+lit	EESC2017, rapid2016, EMA2016, europarl_v10,  OPUS_DGT_v2019, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newsdev2019_lten, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2019_lten	
+nld	EESC2017, rapid2016, EMA2016, news_commentary_v14, OPUS_DGT_v2019,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+lav	EESC2017, rapid2016, EMA2016, europarl_v7, OPUS_DGT_v2019, OPUS_EMEA_v3, OPUS100v1_train	newsdev2017_lven, OPUS100v1_dev, OPUS100v1_test	newstest2017_lven	
+zho	GlobalVoices_2018Q4, news_commentary_v14, OPUS_UNPC_v1_0, OPUS_MultiUN_v1, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2018_zhen, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2019_zhen, UNv1_test	UNv1_dev, newsdev2017_zhen, newstest2017_zhen
+tur	GlobalVoices_2018Q4, OPUS_Tanzil_v1, OPUS_OpenSubtitles_v2018, OPUS_SETIMES_v2, OPUS_TED2013_v1_1, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newstest2017_tren, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2018_tren	newsdev2016_tren, newstest2016_tren
+swe	EESC2017, EMA2016, GlobalVoices_2018Q4,rapid2016,OPUS_DGT_v2019,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+est	EESC2017, EMA2016,OPUS_DGT_v2019, OPUS_Europarl_v8, rapid2016, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newsdev2018_eten,, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	newstest2018_eten	
+hun	EESC2017, EMA2016, GlobalVoices_2018Q4, rapid2016, OPUS_DGT_v2019,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+ell	EESC2017, EMA2016, GlobalVoices_2018Q4, rapid2016, OPUS_DGT_v2019,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+slv	EESC2017, EMA2016, OPUS_DGT_v2019,OPUS_EUbookshop_v2, rapid2016,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+bul	EESC2017, EMA2016, GlobalVoices_2018Q4, OPUS_EUbookshop_v2, rapid2016, europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+dan	EESC2017, EMA2016, GlobalVoices_2018Q4,rapid2016,OPUS_DGT_v2019,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+ara	GlobalVoices_2018Q4,OPUS_MultiUN_v1, news_commentary_v14,OPUS_UNPC_v1_0, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	UNv1_dev, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	UNv1_test	
+slk	EESC2017, EMA2016,rapid2016,OPUS_DGT_v2019,OPUS_EUbookshop_v2,europarl_v7, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+hrv	EESC2017, EMA2016,OPUS_DGT_v2019,rapid2016,OPUS_EUbookshop_v2, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+hin	GlobalVoices_2018Q4,JoshuaIndianCorpus_training,pmindia_v1,news_commentary_v14,IITBv1_5_train, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	IITBv1_5_dev, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	IITBv1_5_test	JoshuaIndianCorpus_test,newstest2014_hien, JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
+mlt	EESC2017, EMA2016, rapid2016, OPUS_DGT_v2019, OPUS_EMEA_v3, OPUS_EUbookshop_v2, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+jpn	GlobalVoices_2018Q4, news_commentary_v14, OPUS_OpenSubtitles_v1, OPUS_Tatoeba_v20190709, kftt_v1_train, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newsdev2020_jaen, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	kftt_v1_test	 kftt_v1_dev kftt_v1_tune
+tam	JoshuaIndianCorpus_training, pmindia_v1, wiki_titles_v2, JW300,JoshuaIndianCorpus_dict, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newsdev2020_taen, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	JoshuaIndianCorpus_test	JoshuaIndianCorpus_dev, JoshuaIndianCorpus_devtest
+pus	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, bible_clean, gnome, kde4, tatoeba, ted_wmt20, OPUS100v1_train	wikipedia_dev_psen, OPUS100v1_dev, OPUS100v1_test	wikipedia_devtest_psen	
+isl	EESC2017, EMA2016,rapid2016,OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+ben	GlobalVoices_2018Q4, pmindia_v1,JoshuaIndianCorpus_training, OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_dict, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	JoshuaIndianCorpus_dev, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+urd	GlobalVoices_2018Q4,JoshuaIndianCorpus_dict,JoshuaIndianCorpus_training,pmindia_v1,OPUS_Tatoeba_v20190709,JW300,OPUS_Tanzil_v1, OPUS100v1_train, neulab_tedtalksv1_train	JoshuaIndianCorpus_dev, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+tel	JW300,OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_training,pmindia_v1, OPUS100v1_train, WikiMatrix_v1	JoshuaIndianCorpus_dev, OPUS100v1_dev, OPUS100v1_test	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+mal	JW300,OPUS_Tatoeba_v20190709,JoshuaIndianCorpus_training,pmindia_v1, OPUS_Tanzil_v1, OPUS100v1_train, WikiMatrix_v1	JoshuaIndianCorpus_dev, OPUS100v1_dev, OPUS100v1_test	JoshuaIndianCorpus_test	JoshuaIndianCorpus_devtest
+sqi	OPUS_SETIMES_v2,GlobalVoices_2018Q4,OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+kaz	news_commentary_v14,wiki_titles_v1, OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	newsdev2019_kken, newstest2019_kken, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+srp	GlobalVoices_2018Q4,OPUS_OpenSubtitles_v2018,OPUS_TildeMODEL_v2018,OPUS_Tatoeba_v20190709,OPUS_SETIMES_v2, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+heb	GlobalVoices_2018Q4,OPUS_OpenSubtitles_v2018,OPUS_Tatoeba_v20190709,JW300, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+guj	wiki_titles_v1,JW300,pmindia_v1, OPUS100v1_train	 newsdev2019_guen, OPUS100v1_dev, OPUS100v1_test	newstest2019_guen	
+fas	GlobalVoices_2018Q4,OPUS_TEP_v1,OPUS_Tanzil_v1,OPUS_OpenSubtitles_v2018, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+nor	EMA2016,rapid2016,OPUS_OpenSubtitles_v2018,JW300, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+kor	GlobalVoices_2018Q4,JW300,OPUS_Tanzil_v1,OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+ind	GlobalVoices_2018Q4, JW300,OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+ukr	JW300,OPUS_OpenSubtitles_v2018,OPUS_TildeMODEL_v2018, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+mkd	GlobalVoices_2018Q4, OPUS_SETIMES_v2, OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+cat	GlobalVoices_2018Q4, JW300, OPUS_OpenSubtitles_v2018, OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+khm	GlobalVoices_2018Q4, JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	wikipedia_dev_kmen, OPUS100v1_dev, OPUS100v1_test	wikipedia_devtest_kmen	
+epo	GlobalVoices_2018Q4, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+xho	OPUS_memat_v1,OPUS_XhosaNavy_v1, JW300, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+vie	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_Wikipedia_v1_0, OPUS_bible_uedin_v1, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+tha	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS100v1_train, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+gle	OPUS_DGT_v2019, OPUS_EUbookshop_v2, OPUS_EUconst_v1,  OPUS_ParaCrawl_v5,  OPUS_Tatoeba_v20190709, paracrawl_v6, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+amh	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+afr	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_SPC_v1, OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+swa	GlobalVoices_2018Q4, JW300, OPUS_EUbookshop_v2, OPUS_GlobalVoices_v2017q3,  OPUS_Tanzil_v1, OPUS_wikimedia_v20190628, WikiMatrix_v1			
+sin	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+mar	JW300,   OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, pmindia_v1, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+kur	GlobalVoices_2018Q4, OPUS_Bianet_v1,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+hye	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS100v1_train, neulab_tedtalksv1_train	, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+eus	OPUS_EhuHac_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+bos	OPUS_EUbookshop_v2, OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_SETIMES_v2, OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+tgl	JW300, OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, WikiMatrix_v1			
+tgk	JW300,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+pan	GlobalVoices_2018Q4, JW300,   OPUS_Tatoeba_v20190709, pmindia_v1, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+ori	GlobalVoices_2018Q4, OPUS_GlobalVoices_v2017q3,   OPUS_Tatoeba_v20190709, pmindia_v1, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+nep	GlobalVoices_2018Q4, JW300,   OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+mya	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS100v1_train, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+kat	JW300,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+kan	JW300,   OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, pmindia_v1, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+hau	JW300,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+bre	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+asm	JW300,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, pmindia_v1, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+zul	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+uzb	OPUS_GNOME_v1,   OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+tat	JW300,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
 som	OPUS_GNOME_v1,  OPUS_Tanzil_v1, OPUS_bible_uedin_v1, OPUS_infopankki_v1, OPUS_wikimedia_v20190628			
-msa	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tanzil_v1			
-mlg	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tatoeba_v20190709			
-kin	JW300,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-glg	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709			
-gla	OPUS_EUbookshop_v2,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
-cym	JW300, OPUS_EUbookshop_v2,   OPUS_Tatoeba_v20190709			
-yor	GlobalVoices_2018Q4, JW300,  OPUS_Tatoeba_v20190709			
-uig	OPUS_GNOME_v1,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-tuk	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+msa	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tanzil_v1, OPUS100v1_train, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+mlg	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+kin	JW300,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+glg	OPUS_GNOME_v1,  OPUS_OpenSubtitles_v2016, OPUS_OpenSubtitles_v2018,  OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+gla	OPUS_EUbookshop_v2,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+cym	JW300, OPUS_EUbookshop_v2,   OPUS_Tatoeba_v20190709, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+yor	GlobalVoices_2018Q4, JW300,  OPUS_Tatoeba_v20190709, OPUS100v1_train			
+uig	OPUS_GNOME_v1,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+tuk	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
 tso	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 sna	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
-oci	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-nno	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+oci	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+nno	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
 mri	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
-mon	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+mon	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, neulab_tedtalksv1_train	, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
 lug	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-lat	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
+lat	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 lao	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-kir	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-ibo	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-bel	OPUS_EUbookshop_v2,   OPUS_Tatoeba_v20190709			
-aze	JW300,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709			
+kir	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+ibo	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+bel	OPUS_EUbookshop_v2,   OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
+aze	JW300,  OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS100v1_train, WikiMatrix_v1, neulab_tedtalksv1_train	, OPUS100v1_dev, OPUS100v1_test, neulab_tedtalksv1_dev, neulab_tedtalksv1_test		
 ast	OPUS_GNOME_v1,   OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-yid	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-wln	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+yid	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
+wln	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
 tir	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 tet	GlobalVoices_2018Q4,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 snd	 OPUS_Tanzil_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
@@ -111,44 +111,44 @@ oss	JW300, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628
 nya	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 nso	JW300,  OPUS_wikimedia_v20190628			
 mai	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-ltz	  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ltz	  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 kal	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 ina	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 iku	 newsdev2020_eniu, newsdev2020_iuen, wiki_titles_v2			
-ido	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+ido	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 hat	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 grn	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-fry	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-fao	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+fry	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1	, OPUS100v1_dev, OPUS100v1_test		
+fao	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 ewe	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
 div	OPUS_GNOME_v1,  OPUS_Tanzil_v1, OPUS_wikimedia_v20190628			
-ceb	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
+ceb	JW300,  OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, WikiMatrix_v1			
 bod	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-bak	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+bak	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 aym	GlobalVoices_2018Q4, JW300, OPUS_GlobalVoices_v2017q3,  OPUS_wikimedia_v20190628			
-arg	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+arg	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train, WikiMatrix_v1			
 wol	 OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1			
 ven	JW300,  OPUS_wikimedia_v20190628			
 ton	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 szl	OPUS_GNOME_v1,  OPUS_wikimedia_v20190628			
 srd	 OPUS_sardware_v1, OPUS_wikimedia_v20190628			
-sme	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+sme	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
 sco	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 san	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 pam	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 orm	JW300,  OPUS_wikimedia_v20190628			
-nds	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709			
+nds	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709, WikiMatrix_v1			
 nav	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 lin	JW300,  OPUS_Tatoeba_v20190709			
 ksh	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 kab	OPUS_Tatoeba_v20190709, OPUS_bible_uedin_v1, OPUS_wikimedia_v20190628			
 jbo	OPUS_GNOME_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-jav	JW300,  OPUS_Tatoeba_v20190709			
+jav	JW300,  OPUS_Tatoeba_v20190709, WikiMatrix_v1			
 haw	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 fur	OPUS_GNOME_v1, OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 fil	GlobalVoices_2018Q4, OPUS_GlobalVoices_v2017q3, 			
 fij	JW300,  OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
-dzo	OPUS_GNOME_v1,  OPUS_wikimedia_v20190628			
+dzo	OPUS_GNOME_v1,  OPUS_wikimedia_v20190628, OPUS100v1_train			
 csb	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709			
 crh	OPUS_GNOME_v1,  OPUS_Tatoeba_v20190709			
 cor	 OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
@@ -177,7 +177,7 @@ nan	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628
 mfe	JW300,  OPUS_Tatoeba_v20190709			
 mah	JW300, OPUS_Tatoeba_v20190709			
 lld	 OPUS_Tatoeba_v20190709			
-lim	OPUS_GNOME_v1, 			
+lim	OPUS_GNOME_v1, , OPUS100v1_train	, OPUS100v1_dev, OPUS100v1_test		
 lij	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 kon	JW300			
 kik	JW300,  OPUS_wikimedia_v20190628			
@@ -202,7 +202,7 @@ zha	 OPUS_wikimedia_v20190628
 yue	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 xmf	JW300, OPUS_wikimedia_v20190628			
 xal	OPUS_Tatoeba_v20190709			
-wuu	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+wuu	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 wal	JW300, OPUS_bible_uedin_v1			
 tvl	JW300, OPUS_Tatoeba_v20190709			
 tum	JW300, OPUS_wikimedia_v20190628			
@@ -238,7 +238,7 @@ mad	 OPUS_Tatoeba_v20190709
 lzh	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 luo	JW300, 			
 ltg				
-lmo	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+lmo	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 lkt	 OPUS_Tatoeba_v20190709			
 lfn	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
 lad	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
@@ -268,11 +268,11 @@ bug	 OPUS_wikimedia_v20190628
 bua	OPUS_Tatoeba_v20190709			
 bis	JW300, 			
 bcl	JW300, OPUS_wikimedia_v20190628			
-bar	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628			
+bar	OPUS_Tatoeba_v20190709, OPUS_wikimedia_v20190628, WikiMatrix_v1			
 bam	 OPUS_Tatoeba_v20190709			
 bal	OPUS_GNOME_v1			
 ase	JW300, 			
-arz	 OPUS_Tatoeba_v20190709			
+arz	 OPUS_Tatoeba_v20190709, WikiMatrix_v1			
 ary	OPUS_Tatoeba_v20190709			
 arq	 OPUS_Tatoeba_v20190709			
 ace	OPUS_Ubuntu_v14_10, OPUS_wikimedia_v20190628			
@@ -405,7 +405,7 @@ mzy	JW300
 mzn	OPUS_wikimedia_v20190628			
 mxv	JW300			
 mww	OPUS_Tatoeba_v20190709			
-mwl	OPUS_Tatoeba_v20190709			
+mwl	OPUS_Tatoeba_v20190709, WikiMatrix_v1			
 mvv	OPUS_Tatoeba_v20190709			
 mrj	OPUS_wikimedia_v20190628			
 moh				
