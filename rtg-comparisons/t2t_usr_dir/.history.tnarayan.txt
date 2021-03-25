@@ -1,0 +1,20 @@
+#1616377989
+wget https://raw.githubusercontent.com/thammegowda/tensor2tensor/master/tensor2tensor/data_generators/translate_srctgt.py 
+#1616378061
+t2t-datagen --help 
+#1616378158
+emc __init__.py
+#1616378209
+t2t-datagen --helpfull 
+#1616378254
+less translate_srctgt.py 
+#1616378283
+emc run.sh 
+#1616378450
+ll
+#1616383959
+emc  translate_srctgt.py 
+#1616384037
+ls  -lah
+#1616384040
+cd ..

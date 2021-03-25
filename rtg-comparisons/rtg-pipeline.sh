@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#!/usr/bin/env bash
-
-
 #SBATCH --mem=16G
 #SBATCH --partition=isi
 #SBATCH --time=1-00:00:00

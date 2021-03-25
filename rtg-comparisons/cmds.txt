@@ -1,0 +1,12 @@
+
+# RTG 
+for i in rtg-01-*; do
+    sbatch -J $i rtg-pipeline.sh -d $i;
+done
+
+# T2T
+sbatch t2t-01-run.sh
+
+
+# fairseq
+
