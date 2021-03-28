@@ -15,13 +15,13 @@
 :keywords: RTG, Translation, Machine Translation, NLP Demo, Low Resource Languages
 
 
-While  there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
+While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
 Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
 In this work, we present useful tools for machine translation research:
 
-* link:https://github.com/thammegowda/mtdata/[MTData]: helps to easily obtain parallel datasets.
-* link:https://isi-nlp.github.io/nlcodec/[NLCodec]: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.
-* link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)]: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.
+* link:https://github.com/thammegowda/mtdata/[MTData^]: helps to easily obtain parallel datasets.
+* link:https://isi-nlp.github.io/nlcodec/[NLCodec^]: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.
+* link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^]: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.
 
 We demonstrate their usefulness by creating a multilingual NMT model capable of translating from 500 source languages to English.
 We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
@@ -29,8 +29,8 @@ We make this multilingual model readily downloadable and usable as a service, or
 == Links
 
 * link:v1/[RTG demo: try many-to-English translation service^]
-* link:data-v1.html[Download datasets (v1)]
-* link:models/[Download trained models]
+* link:data-v1.html[Download datasets (v1)^]
+* link:models/[Download trained models^]
 * Get paper: (Coming soon TODO: arxiv link)
 * Tools:
 ** MTData: https://github.com/thammegowda/mtdata/ +
@@ -63,7 +63,7 @@ When the docker image runs successfully, you may access the translation service 
 === Option 2: Without using Docker
 
 **Step 1:** Setup a `conda` environment and install `rtg` library. +
-If conda is missing in your system, link:https://docs.conda.io/en/latest/miniconda.html[please install miniconda] to get started.
+If conda is missing in your system, link:https://docs.conda.io/en/latest/miniconda.html[please install miniconda^] to get started.
 [source, bash]
 ----
 
@@ -104,7 +104,7 @@ curl $API --data "source=Comment allez-vous?" \
 curl -X POST -H "Content-Type: application/json" $API\
   --data '{"source":["Comment allez-vous?", "Bonne journée"]}' $api
 ----
-NOTE: To learn more about RTG service and how to interact with it, go to https://isi-nlp.github.io/rtg/#_rtg_serve
+NOTE: To learn more about RTG service and how to interact with it, go to link:https://isi-nlp.github.io/rtg/#_rtg_serve[RTG Docs^]
 
 Alternatively, use CLI to run in a batch mode:
 [source, bash]
@@ -121,7 +121,7 @@ cut -f1 output.out | sed 's/<unk>//g' | sacremoses detokenize > output.out.detok
 ----
 
 == Parent-Child Transfer for Low Resource MT
-Refer to the documentation at https://isi-nlp.github.io/rtg/#conf-parent-child
+Refer to the documentation at link:https://isi-nlp.github.io/rtg/#conf-parent-child[RTG Docs^]
 
 == Citation
 Please use the following article to reference this work:

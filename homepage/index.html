@@ -441,6 +441,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172035750-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172035750-1');
+</script>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -467,20 +475,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>While  there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
+<p>While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
 Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
 In this work, we present useful tools for machine translation research:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/thammegowda/mtdata/">MTData</a>: helps to easily obtain parallel datasets.</p>
+<p><a href="https://github.com/thammegowda/mtdata/" target="_blank" rel="noopener">MTData</a>: helps to easily obtain parallel datasets.</p>
 </li>
 <li>
-<p><a href="https://isi-nlp.github.io/nlcodec/">NLCodec</a>: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.</p>
+<p><a href="https://isi-nlp.github.io/nlcodec/" target="_blank" rel="noopener">NLCodec</a>: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.</p>
 </li>
 <li>
-<p><a href="https://isi-nlp.github.io/rtg/">Reader-Translator-Generator (RTG)</a>: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.</p>
+<p><a href="https://isi-nlp.github.io/rtg/" target="_blank" rel="noopener">Reader-Translator-Generator (RTG)</a>: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.</p>
 </li>
 </ul>
 </div>
@@ -499,10 +507,10 @@ We make this multilingual model readily downloadable and usable as a service, or
 <p><a href="v1/" target="_blank" rel="noopener">RTG demo: try many-to-English translation service</a></p>
 </li>
 <li>
-<p><a href="data-v1.html">Download datasets (v1)</a></p>
+<p><a href="data-v1.html" target="_blank" rel="noopener">Download datasets (v1)</a></p>
 </li>
 <li>
-<p><a href="models/">Download trained models</a></p>
+<p><a href="models/" target="_blank" rel="noopener">Download trained models</a></p>
 </li>
 <li>
 <p>Get paper: (Coming soon TODO: arxiv link)</p>
@@ -570,7 +578,7 @@ Docker manager may have memory and CPU core constrain enforced on your host. The
 <h3 id="_option_2_without_using_docker">Option 2: Without using Docker</h3>
 <div class="paragraph">
 <p><strong>Step 1:</strong> Setup a <code>conda</code> environment and install <code>rtg</code> library.<br>
-If conda is missing in your system, <a href="https://docs.conda.io/en/latest/miniconda.html">please install miniconda</a> to get started.</p>
+If conda is missing in your system, <a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank" rel="noopener">please install miniconda</a> to get started.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -634,7 +642,7 @@ curl -X POST -H "Content-Type: application/json" $API\
 <div class="title">Note</div>
 </td>
 <td class="content">
-To learn more about RTG service and how to interact with it, go to <a href="https://isi-nlp.github.io/rtg/#_rtg_serve" class="bare">https://isi-nlp.github.io/rtg/#_rtg_serve</a>
+To learn more about RTG service and how to interact with it, go to <a href="https://isi-nlp.github.io/rtg/#_rtg_serve" target="_blank" rel="noopener">RTG Docs</a>
 </td>
 </tr>
 </table>
@@ -662,7 +670,7 @@ cut -f1 output.out | sed 's/&lt;unk&gt;//g' | sacremoses detokenize &gt; output.
 <h2 id="_parent_child_transfer_for_low_resource_mt">Parent-Child Transfer for Low Resource MT</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Refer to the documentation at <a href="https://isi-nlp.github.io/rtg/#conf-parent-child" class="bare">https://isi-nlp.github.io/rtg/#conf-parent-child</a></p>
+<p>Refer to the documentation at <a href="https://isi-nlp.github.io/rtg/#conf-parent-child" target="_blank" rel="noopener">RTG Docs</a></p>
 </div>
 </div>
 </div>
@@ -682,7 +690,7 @@ cut -f1 output.out | sed 's/&lt;unk&gt;//g' | sacremoses detokenize &gt; output.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-27 18:50:52 -0700
+Last updated 2021-03-27 19:07:55 -0700
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
