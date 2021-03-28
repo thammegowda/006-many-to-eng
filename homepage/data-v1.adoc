@@ -1,0 +1,553 @@
+=  Many-to-English: Data v1 Statistics
+@ USC Information Sciences Institute, Natural Language Group
+:doctype: article
+:encoding: utf-8
+:lang: en
+:toclevels: 3
+//:sectnums: false
+// :sectnumlevels: 4
+:data-uri:
+:toc: left
+//injects google analytics to <head>
+:docinfo2:
+:source-highlighter: highlight.js
+:description: Many-to-English Data v1 Stats
+:keywords: RTG, Translation, Machine Translation, NLP dataset, Low Resource Languages
+
+
+Datasets are available at http://rtg.isi.edu/many-eng/data/v1/
+
+[source,YAML]
+----
+train.raw.tsv.gz  # Training data in raw form, before cleaning, deduping and tokenization
+train.v1.eng.tok.gz # English  training data, after cleaning and tokenization
+train.v1.src.tok.gz # Source training data, after cleaning and tokenization
+train.v1.lang.gz   # lang ID of source side sentences
+train.v1.prov.gz   # provenance of record (to see where where this record)
+train.v1.tok.stats.tsv # stats such as sentence and token count per language
+devs-combo-shuf10k-raw+tok.tgz # 10K sentences for validation, randomly sampled from all dev sets
+devtests-raw+tok.tgz  # all the dev and test data; both raw and tokenized
+citations.bib  # BibTeX of articles which published the datasets collected in this work
+prep.tgz  # scripts to prepare datasets from square 1.
+----
+`train.v1.{eng.tok,src.tok,lang,prov}` are plain text files after running gunzip.
+They should have same number of lines. Line number is the way to cross-reference between them.
+
+
+You may also prepare these datasets from scratch or revise cleaning mechanisms starting from `train.raw.tsv.gz`. The `prep.tgz` file has `datatprep.ipynb` notebook that contains steps to download, tokenize, deduplicate and filter our bad records.
+
+==  Statistics
+
+[cols="^,<,>,>,>", options="header"]
+|===
+|ISO 639-3 |Name |Sentences | SourceTokens | EnglishTokens
+|Total | |473,791,285 |9,001,777,125 |9,072,884,192
+| | | | |
+|FRA |French | 33,010,111 | 1,001,694,594 | 862,394,235
+|RUS |Russian | 25,564,367 | 640,353,439 | 682,207,974
+|ARA |Arabic | 22,679,389 | 588,552,279 | 673,442,592
+|ZHO |Chinese | 20,057,876 | 827,184,155 | 563,720,365
+|TUR |Turkish | 37,720,743 | 282,136,509 | 386,742,077
+|SRP |Serbian | 33,880,099 | 279,793,956 | 343,470,174
+|HEB |Hebrew | 25,841,585 | 224,902,346 | 283,316,533
+|NLD |Dutch | 12,428,300 | 278,665,986 | 281,604,016
+|POR |Portuguese | 10,954,498 | 279,392,943 | 264,796,337
+|DEU |German | 12,119,459 | 245,035,715 | 254,126,788
+|ITA |Italian | 10,095,386 | 244,588,092 | 245,359,909
+|SPA |Spanish | 9,776,966 | 229,401,449 | 212,893,081
+|SWE |Swedish | 8,024,230 | 156,259,227 | 175,706,578
+|DAN |Danish | 7,682,343 | 163,476,497 | 173,310,159
+|FIN |Finnish | 8,187,935 | 131,239,231 | 172,686,863
+|POL |Polish | 8,289,276 | 151,588,493 | 169,532,813
+|ELL |Modern Greek (1453-) | 6,835,717 | 155,615,617 | 154,230,888
+|NOR |Norwegian | 10,860,768 | 126,923,739 | 142,425,026
+|HUN |Hungarian | 6,785,904 | 124,670,924 | 140,421,813
+|SLV |Slovenian | 6,227,413 | 123,184,373 | 135,429,495
+|BOS |Bosnian | 12,903,765 | 108,980,163 | 134,352,300
+|SLK |Slovak | 5,689,766 | 111,471,118 | 125,492,209
+|EST |Estonian | 5,788,575 | 94,125,966 | 120,585,810
+|LIT |Lithuanian | 5,139,565 | 95,332,259 | 113,401,294
+|LAV |Latvian | 4,460,210 | 88,412,493 | 104,312,482
+|FAS |Persian | 8,054,223 | 96,700,032 | 103,579,635
+|JPN |Japanese | 5,379,355 | 111,898,280 | 95,783,174
+|VIE |Vietnamese | 6,186,692 | 112,645,134 | 91,410,645
+|UKR |Ukrainian | 4,446,827 | 66,084,956 | 75,462,511
+|CES |Czech | 3,986,495 | 64,539,275 | 74,129,349
+|MLT |Maltese | 3,079,369 | 85,936,755 | 71,180,461
+|KOR |Korean | 3,907,008 | 124,773,196 | 67,101,857
+|IND |Indonesian | 3,441,203 | 63,578,787 | 64,369,133
+|CAT |Catalan | 3,151,150 | 66,838,920 | 60,317,575
+|RON |Romanian | 2,871,321 | 52,945,536 | 51,780,651
+|BUL |Bulgarian | 2,755,198 | 47,511,112 | 50,192,767
+|THA |Thai | 4,003,627 | 55,716,180 | 49,463,563
+|GLE |Irish | 1,770,628 | 48,936,403 | 45,855,008
+|HRV |Croatian | 2,304,149 | 34,755,332 | 39,315,927
+|HIN |Hindi | 2,211,381 | 41,452,435 | 38,163,209
+|MKD |Macedonian | 1,898,346 | 29,456,395 | 31,284,559
+|EUS |Basque | 2,101,130 | 24,427,549 | 30,827,665
+|SQI |Albanian | 1,659,043 | 28,953,259 | 28,389,962
+|URD |Urdu | 1,121,988 | 28,181,194 | 26,194,588
+|TGL |Tagalog | 1,307,417 | 28,950,146 | 26,087,793
+|BEN |Bengali | 1,469,860 | 22,481,515 | 23,509,544
+|GLG |Galician | 1,270,160 | 23,281,744 | 22,762,444
+|AFR |Afrikaans | 1,164,819 | 22,720,174 | 21,574,598
+|CEB |Cebuano | 1,177,127 | 23,461,502 | 21,304,716
+|EPO |Esperanto | 1,273,333 | 20,025,116 | 20,887,797
+|SWA |Swahili | 975,456 | 17,407,097 | 19,155,309
+|ZUL |Zulu | 964,117 | 13,671,887 | 18,412,040
+|MSA |Malay | 1,945,672 | 16,671,082 | 18,053,859
+|TAM |Tamil | 1,020,167 | 11,400,283 | 17,989,394
+|XHO |Xhosa | 993,668 | 13,026,040 | 17,543,214
+|MAL |Malayalam | 1,042,337 | 10,594,525 | 17,246,958
+|ILO |Iloko | 898,926 | 17,814,296 | 17,022,059
+|SIN |Sinhala | 1,141,931 | 11,643,363 | 16,436,631
+|MLG |Malagasy | 826,222 | 17,981,469 | 16,408,357
+|HIL |Hiligaynon | 807,375 | 17,432,476 | 15,442,425
+|SNA |Shona | 763,546 | 11,391,280 | 15,229,553
+|NYA |Nyanja | 778,089 | 12,958,088 | 14,921,565
+|TSN |Tswana | 780,798 | 20,008,782 | 14,855,070
+|TSO |Tsonga | 757,853 | 17,309,341 | 14,474,201
+|AMH |Amharic | 669,145 | 9,765,847 | 14,326,330
+|ISL |Icelandic | 1,112,770 | 10,987,587 | 13,281,910
+|AZE |Azerbaijani | 693,153 | 10,806,686 | 12,639,115
+|KAT |Georgian | 677,998 | 7,474,496 | 11,906,197
+|MAR |Marathi | 625,462 | 8,315,779 | 11,844,853
+|MYA |Burmese | 510,083 | 12,713,472 | 11,545,908
+|EWE |Ewe | 588,735 | 12,826,778 | 11,227,502
+|SRN |Sranan Tongo | 546,788 | 14,002,996 | 10,719,800
+|TAH |Tahitian | 547,403 | 16,474,812 | 10,587,464
+|NSO |Pedi | 555,777 | 13,718,112 | 10,567,895
+|LIN |Lingala | 536,198 | 10,804,478 | 10,179,883
+|TWI |Twi | 537,268 | 11,294,035 | 10,174,586
+|TEL |Telugu | 557,715 | 6,533,017 | 9,246,609
+|KIN |Kinyarwanda | 488,086 | 8,493,687 | 9,135,649
+|BIS |Bislama | 476,064 | 11,972,512 | 9,034,190
+|BCL |Central Bikol | 451,274 | 9,946,706 | 8,765,221
+|NEP |Nepali | 444,058 | 5,427,354 | 8,183,887
+|LOZ |Lozi | 411,874 | 9,495,543 | 7,872,336
+|GAA |Ga | 409,659 | 9,284,738 | 7,868,224
+|IBO |Igbo | 415,234 | 10,075,710 | 7,737,716
+|YOR |Yoruba | 411,461 | 12,671,491 | 7,668,947
+|PAN |Panjabi | 394,938 | 6,569,439 | 7,564,168
+|HYE |Armenian | 382,378 | 5,779,847 | 7,504,431
+|KAN |Kannada | 327,475 | 4,029,042 | 7,429,653
+|TAT |Tatar | 378,375 | 6,070,274 | 7,401,723
+|PAP |Papiamento | 381,796 | 8,155,628 | 7,213,489
+|BEM |Bemba (Zambia) | 381,297 | 6,526,989 | 7,171,421
+|TPI |Tok Pisin | 383,675 | 9,120,242 | 7,162,905
+|GUJ |Gujarati | 420,729 | 4,899,065 | 6,961,346
+|SMO |Samoan | 364,010 | 9,262,113 | 6,940,694
+|RUN |Rundi | 364,103 | 6,521,655 | 6,836,527
+|FIJ |Fijian | 357,673 | 7,837,220 | 6,726,164
+|EFI |Efik | 332,589 | 7,312,421 | 6,298,566
+|TIR |Tigrinya | 320,856 | 4,953,825 | 6,288,908
+|TON |Tonga (Tonga Islands) | 323,838 | 11,087,182 | 6,085,262
+|LUE |Luvale | 317,092 | 4,717,517 | 6,023,708
+|HAU |Hausa | 295,829 | 6,459,154 | 5,881,574
+|LUA |Luba-Lulua | 292,212 | 5,517,519 | 5,532,234
+|KIR |Kirghiz | 283,308 | 3,984,657 | 5,499,207
+|TOI |Tonga (Zambia) | 291,857 | 4,344,007 | 5,468,385
+|GUW |Gun | 286,899 | 6,650,627 | 5,431,468
+|PAG |Pangasinan | 282,341 | 5,602,136 | 5,351,754
+|WAR |Waray (Philippines) | 281,941 | 6,216,918 | 5,338,684
+|PIS |Pijin | 263,681 | 5,313,880 | 5,010,374
+|SWC |Congo Swahili | 271,892 | 4,583,791 | 4,937,615
+|TGK |Tajik | 286,675 | 4,184,663 | 4,873,294
+|SAG |Sango | 250,019 | 6,554,737 | 4,779,729
+|SOM |Somali | 161,865 | 3,646,152 | 4,573,785
+|MAH |Marshallese | 233,516 | 5,757,879 | 4,448,457
+|OSS |Ossetian | 225,664 | 3,811,618 | 4,404,414
+|TUM |Tumbuka | 232,540 | 3,622,880 | 4,347,800
+|HMO |Hiri Motu | 227,759 | 4,781,868 | 4,314,100
+|LUG |Ganda | 224,749 | 3,731,957 | 4,261,136
+|BEL |Belarusian | 290,072 | 3,469,541 | 4,206,848
+|PON |Pohnpeian | 218,908 | 4,397,432 | 4,185,579
+|TLL |Tetela | 222,225 | 4,233,529 | 4,185,359
+|LAT |Latin | 203,175 | 2,912,205 | 4,180,355
+|KQN |Kaonde | 219,170 | 3,727,122 | 4,097,908
+|YAP |Yapese | 212,548 | 6,219,777 | 4,078,280
+|ISO |Isoko | 215,449 | 4,917,558 | 4,047,680
+|CHK |Chuukese | 207,347 | 4,363,629 | 4,031,326
+|NIU |Niuean | 214,222 | 5,416,864 | 3,993,808
+|UMB |Umbundu | 212,228 | 3,988,296 | 3,939,817
+|GIL |Gilbertese | 203,252 | 4,762,950 | 3,888,542
+|KON |Kongo | 206,234 | 4,417,086 | 3,883,443
+|VEN |Venda | 204,407 | 5,057,268 | 3,782,533
+|LUB |Luba-Katanga | 197,423 | 3,541,419 | 3,742,176
+|HAT |Haitian | 197,201 | 4,438,519 | 3,630,101
+|KAL |Kalaallisut | 191,660 | 2,206,906 | 3,610,449
+|ZNE |Zande (Individual) | 190,082 | 4,401,103 | 3,602,098
+|OCI |Occitan (Post 1500) | 182,542 | 3,606,108 | 3,536,378
+|LUS |Lushai | 187,503 | 4,290,199 | 3,534,861
+|CRS |Seselwa Creole French | 188,361 | 3,847,882 | 3,528,139
+|MOS |Mossi | 186,434 | 4,706,515 | 3,517,104
+|TIV |Tiv | 184,113 | 4,810,668 | 3,469,806
+|NDS |Low German | 185,909 | 2,927,867 | 3,456,271
+|MFE |Morisyen | 181,560 | 4,068,226 | 3,367,397
+|FRY |Western Frisian | 174,498 | 2,726,426 | 3,360,333
+|MON |Mongolian | 169,290 | 2,406,026 | 3,330,866
+|TVL |Tuvalu | 172,371 | 4,970,984 | 3,302,688
+|YUA |Yucateco | 168,299 | 3,524,830 | 3,301,268
+|KWY |San Salvador Kongo | 169,875 | 2,964,934 | 3,119,715
+|WLS |Wallisian | 154,488 | 3,981,535 | 2,871,012
+|ORM |Oromo | 155,084 | 2,646,041 | 2,858,967
+|GUG |Paraguayan Guaraní | 143,391 | 2,151,216 | 2,742,729
+|ZAI |Isthmus Zapotec | 146,783 | 2,741,722 | 2,741,357
+|KUR |Kurdish | 111,126 | 3,090,640 | 2,729,572
+|AYM |Aymara | 138,760 | 1,939,507 | 2,710,890
+|KHM |Khmer | 150,117 | 2,966,056 | 2,683,112
+|TZO |Tzotzil | 140,124 | 2,993,791 | 2,679,819
+|BCI |Baoulé | 142,169 | 3,685,710 | 2,597,887
+|SND |Sindhi | 86,214 | 2,580,903 | 2,566,710
+|QUE |Quechua | 134,194 | 1,739,523 | 2,543,319
+|LUO |Luo (Kenya And Tanzania) | 136,625 | 2,603,306 | 2,502,410
+|LUN |Lunda | 134,578 | 1,857,219 | 2,482,581
+|QUZ |Cusco Quechua | 127,408 | 1,649,454 | 2,450,616
+|RND |Ruund | 133,631 | 2,443,228 | 2,446,692
+|UZB |Uzbek | 137,566 | 2,233,702 | 2,360,392
+|DIV |Dhivehi | 85,159 | 2,441,892 | 2,350,351
+|WAL |Wolaytta | 120,608 | 1,844,136 | 2,325,431
+|UIG |Uighur | 84,928 | 2,088,135 | 2,239,573
+|SSW |Swati | 116,170 | 1,690,313 | 2,238,351
+|TUK |Turkmen | 121,578 | 1,730,753 | 2,231,716
+|QUY |Ayacucho Quechua | 113,702 | 1,402,781 | 2,164,966
+|NYK |Nyaneka | 116,364 | 1,753,649 | 2,133,198
+|TDT |Tetun Dili | 112,041 | 2,385,376 | 2,107,083
+|BZS |Brazilian Sign Language | 110,679 | 2,044,945 | 2,065,232
+|KWN |Kwangali | 106,595 | 1,709,040 | 1,939,056
+|KAZ |Kazakh | 248,822 | 1,652,871 | 1,906,753
+|KEK |Kekchí | 63,350 | 2,231,030 | 1,836,968
+|KUA |Kuanyama | 99,227 | 1,932,349 | 1,830,081
+|NDO |Ndonga | 99,817 | 1,864,378 | 1,810,583
+|MRI |Maori | 62,963 | 2,151,493 | 1,807,107
+|PCK |Paite Chin | 61,173 | 1,773,303 | 1,799,998
+|PES |Iranian Persian | 64,142 | 1,508,974 | 1,791,906
+|PLT |Plateau Malagasy | 60,810 | 1,843,559 | 1,789,347
+|DJE |Zarma | 60,515 | 1,924,044 | 1,780,607
+|LTZ |Luxembourgish | 92,860 | 1,400,718 | 1,744,759
+|KIK |Kikuyu | 94,242 | 1,714,356 | 1,737,121
+|NZI |Nzima | 92,884 | 1,798,852 | 1,685,594
+|TOP |Papantla Totonac | 86,769 | 1,345,448 | 1,620,933
+|KMB |Kimbundu | 90,341 | 1,960,969 | 1,617,965
+|BAK |Bashkir | 88,618 | 1,216,200 | 1,580,575
+|ARG |Aragonese | 82,038 | 1,641,632 | 1,535,954
+|TSC |Tswa | 84,311 | 1,911,340 | 1,534,506
+|FAO |Faroese | 75,612 | 1,194,153 | 1,534,477
+|JSL |Japanese Sign Language | 83,773 | 2,223,227 | 1,528,544
+|ISE |Italian Sign Language | 79,874 | 1,497,912 | 1,527,368
+|GYM |Ngäbere | 78,796 | 1,624,979 | 1,459,454
+|JAV |Javanese | 73,185 | 1,177,647 | 1,442,806
+|ASM |Assamese | 94,568 | 1,027,775 | 1,390,206
+|ZLM |Malay (Individual) | 72,676 | 1,139,427 | 1,372,948
+|VMW |Makhuwa | 72,847 | 1,181,569 | 1,328,856
+|ACH |Acoli | 73,172 | 1,496,706 | 1,325,711
+|CHV |Chuvash | 68,211 | 1,032,279 | 1,302,667
+|BRE |Breton | 129,742 | 1,301,922 | 1,286,455
+|MCO |Coatlán Mixe | 66,222 | 1,102,029 | 1,263,381
+|MFS |Mexican Sign Language | 63,494 | 1,247,858 | 1,253,416
+|TOG |Tonga (Nyasa) | 67,113 | 1,053,514 | 1,231,614
+|MAM |Mam | 57,254 | 1,424,153 | 1,171,359
+|RAR |Rarotongan | 66,762 | 1,613,321 | 1,170,921
+|ADA |Adangme | 63,021 | 1,669,121 | 1,131,992
+|NNO |Norwegian Nynorsk | 139,111 | 1,113,937 | 1,116,261
+|CAB |Garifuna | 59,416 | 1,016,417 | 1,095,937
+|NCJ |Northern Puebla Nahuatl | 59,251 | 963,782 | 1,092,104
+|ARZ |Egyptian Arabic | 54,590 | 927,189 | 1,089,748
+|DHV |Dehu | 58,875 | 1,504,920 | 1,078,197
+|WUU |Wu Chinese | 46,633 | 1,437,243 | 1,075,055
+|DJK |Eastern Maroon Creole | 52,628 | 1,458,098 | 1,038,818
+|GUC |Wayuu | 53,537 | 826,821 | 985,121
+|CAK |Kaqchikel | 46,427 | 1,293,345 | 962,624
+|SEH |Sena | 52,334 | 856,758 | 945,244
+|CYM |Welsh | 99,826 | 1,055,852 | 937,929
+|KAM |Kamba (Kenya) | 51,054 | 959,249 | 932,972
+|SOP |Songe | 51,070 | 938,990 | 927,422
+|QVI |Imbabura Highland Quichua | 50,527 | 672,711 | 921,493
+|NYN |Nyankole | 50,379 | 806,471 | 912,254
+|BAR |Bavarian | 58,409 | 796,255 | 908,588
+|RSL |Russian Sign Language | 44,582 | 702,400 | 856,169
+|SID |Sidamo | 46,851 | 686,888 | 847,841
+|ORI |Oriya | 49,192 | 698,991 | 832,456
+|IDO |Ido | 46,163 | 763,729 | 831,713
+|LMO |Lombard | 39,461 | 864,899 | 827,408
+|YAO |Yao | 43,689 | 675,341 | 791,700
+|MGR |Mambwe-Lungu | 43,911 | 731,912 | 785,222
+|KRI |Krio | 42,349 | 999,510 | 752,221
+|MWL |Mirandese | 31,518 | 742,141 | 746,747
+|HMN |Hmong | 41,806 | 906,741 | 729,196
+|NGL |Lomwe | 39,339 | 596,790 | 693,966
+|KSS |Southern Kisi | 37,693 | 773,744 | 655,897
+|NCX |Central Puebla Nahuatl | 36,422 | 523,049 | 654,865
+|KOO |Konzo | 36,378 | 575,840 | 642,178
+|CJK |Chokwe | 35,767 | 601,420 | 627,383
+|TCF |Malinaltepec Me'Phaa | 34,679 | 847,824 | 627,050
+|BBC |Batak Toba | 35,181 | 574,823 | 619,966
+|TOJ |Tojolabal | 33,805 | 667,730 | 606,099
+|NIA |Nias | 34,280 | 582,906 | 604,629
+|SRM |Saramaccan | 34,739 | 848,933 | 597,203
+|IBA |Iban | 34,577 | 614,600 | 591,325
+|NCH |Central Huasteca Nahuatl | 31,018 | 475,377 | 561,258
+|FON |Fon | 31,273 | 865,700 | 552,748
+|KAB |Kabyle | 38,018 | 758,336 | 550,414
+|KSW |S'Gaw Karen | 26,363 | 1,264,404 | 545,235
+|IBG |Ibanag | 30,270 | 568,962 | 537,232
+|NGU |Guerrero Nahuatl | 29,768 | 462,975 | 535,371
+|URH |Urhobo | 29,347 | 593,673 | 530,354
+|NDC |Ndau | 30,369 | 488,763 | 527,840
+|KBP |Kabiyè | 29,066 | 618,571 | 521,923
+|WES |Cameroon Pidgin | 28,159 | 642,670 | 499,592
+|MAU |Huautla Mazatec | 27,544 | 496,580 | 499,460
+|BAS |Basa (Cameroon) | 27,771 | 616,191 | 496,676
+|BUM |Bulu (Cameroon) | 27,996 | 624,348 | 494,140
+|CTU |Chol | 26,462 | 547,357 | 478,157
+|CNH |Hakha Chin | 27,733 | 554,298 | 477,786
+|BTX |Batak Karo | 27,295 | 436,554 | 470,088
+|NBA |Nyemba | 27,317 | 553,352 | 469,851
+|LAO |Lao | 22,217 | 697,242 | 462,713
+|NYU |Nyungwe | 24,491 | 419,713 | 427,580
+|ABK |Abkhazian | 23,161 | 292,717 | 423,050
+|PUS |Pushto | 28,260 | 483,360 | 421,907
+|CHR |Cherokee | 15,746 | 287,938 | 416,623
+|COP |Coptic | 15,706 | 256,370 | 416,296
+|DOP |Lukpa | 15,711 | 558,508 | 416,290
+|SYR |Syriac | 15,747 | 217,478 | 415,892
+|QUW |Tena Lowland Quichua | 15,674 | 292,905 | 415,461
+|USP |Uspanteco | 15,583 | 500,341 | 412,979
+|QUC |K'Iche' | 15,575 | 616,986 | 412,280
+|ROM |Romany | 16,048 | 422,362 | 411,993
+|AMU |Guerrero Amuzgo | 15,533 | 566,676 | 411,225
+|JAK |Jakun | 15,513 | 564,458 | 411,137
+|NHG |Tetelcingo Nahuatl | 15,459 | 408,868 | 409,271
+|TZH |Tzeltal | 22,481 | 529,093 | 408,029
+|SHI |Tachelhit | 15,288 | 637,003 | 404,390
+|CNI |Asháninka | 15,264 | 331,249 | 404,004
+|WOL |Wolof | 15,230 | 402,534 | 403,295
+|OKE |Okpe (Southwestern Edo) | 22,471 | 458,573 | 401,423
+|CJP |Cabécar | 15,155 | 608,344 | 400,614
+|FSE |Finnish Sign Language | 21,671 | 298,224 | 400,110
+|GBI |Galela | 15,023 | 624,914 | 398,145
+|SSP |Spanish Sign Language | 21,242 | 387,212 | 395,815
+|PCM |Nigerian Pidgin | 22,001 | 465,750 | 394,764
+|PPK |Uma | 14,576 | 660,598 | 384,278
+|BHW |Biak | 22,261 | 366,474 | 381,127
+|PSO |Polish Sign Language | 20,433 | 312,201 | 379,785
+|CMN |Mandarin Chinese | 44,110 | 487,138 | 374,935
+|CHQ |Quiotepec Chinantec | 14,251 | 912,859 | 366,313
+|DIK |Southwestern Dinka | 13,319 | 383,777 | 353,980
+|OJB |Northwestern Ojibwa | 13,318 | 290,036 | 353,940
+|CHA |Chamorro | 14,539 | 316,758 | 350,061
+|QUG |Chimborazo Highland Quichua | 20,272 | 247,947 | 349,776
+|CSL |Chinese Sign Language | 17,874 | 494,654 | 348,101
+|JIV |Shuar | 12,910 | 272,452 | 342,885
+|AGR |Aguaruna | 12,778 | 295,678 | 338,609
+|ACU |Achuar-Shiwiar | 12,347 | 349,234 | 328,050
+|AKE |Akawaio | 12,346 | 493,819 | 326,593
+|CCE |Chopi | 17,935 | 346,295 | 303,153
+|CHW |Chuwabu | 17,988 | 252,729 | 299,706
+|GSG |German Sign Language | 16,400 | 268,254 | 298,220
+|ARN |Mapudungun | 16,737 | 275,559 | 296,456
+|BSN |Barasana-Eduria | 11,180 | 681,542 | 291,888
+|TTJ |Tooro | 16,442 | 252,981 | 280,979
+|SUN |Sundanese | 15,850 | 250,374 | 272,390
+|KBH |Camsá | 10,287 | 384,331 | 272,175
+|LAM |Lamba | 14,846 | 240,797 | 271,580
+|DUA |Duala | 15,351 | 444,826 | 269,185
+|HNE |Chhattisgarhi | 52,059 | 322,484 | 263,135
+|XMF |Mingrelian | 12,946 | 169,159 | 262,169
+|KMR |Northern Kurdish | 14,798 | 273,245 | 260,963
+|DYU |Dyula | 14,886 | 322,319 | 258,596
+|HSH |Hungarian Sign Language | 13,877 | 214,890 | 256,618
+|AED |Argentine Sign Language | 12,390 | 248,120 | 251,486
+|NAV |Navajo | 14,626 | 229,364 | 248,195
+|TYV |Tuvinian | 12,979 | 197,520 | 245,669
+|RMN |Balkan Romani | 14,527 | 257,259 | 241,449
+|FCS |Quebec Sign Language | 13,034 | 253,315 | 239,624
+|TSS |Taiwan Sign Language | 12,298 | 357,723 | 239,608
+|BTS |Batak Simalungun | 14,255 | 233,806 | 238,303
+|GLV |Manx | 11,006 | 261,914 | 232,828
+|NIJ |Ngaju | 13,158 | 213,322 | 222,299
+|CSE |Czech Sign Language | 11,655 | 179,085 | 210,357
+|WLN |Walloon | 41,887 | 301,028 | 210,120
+|BIN |Bini | 11,635 | 261,717 | 208,326
+|SXN |Sangir | 11,668 | 228,088 | 195,463
+|KVK |Korean Sign Language | 9,330 | 321,614 | 194,428
+|RMS |Romanian Sign Language | 10,434 | 198,109 | 193,459
+|KAC |Kachin | 10,930 | 270,098 | 184,701
+|SVK |Slovakian Sign Language | 10,141 | 159,092 | 182,557
+|AMI |Amis | 9,156 | 186,011 | 175,520
+|UDM |Udmurt | 9,394 | 147,593 | 173,612
+|MNI |Manipuri | 7,281 | 127,875 | 162,599
+|TMH |Tamashek | 5,363 | 168,471 | 152,620
+|HER |Herero | 8,179 | 151,589 | 141,558
+|GSS |Greek Sign Language | 7,090 | 137,633 | 140,185
+|ALZ |Alur | 7,567 | 154,509 | 133,119
+|BZJ |Belize Kriol English | 6,905 | 136,165 | 119,827
+|IKU |Inuktitut | 5,244 | 66,528 | 113,112
+|POT |Potawatomi | 4,113 | 108,987 | 110,373
+|MXV |Metlatónoc Mixtec | 5,924 | 176,367 | 105,471
+|PDT |Plautdietsch | 6,019 | 115,997 | 104,913
+|SME |Northern Sami | 18,433 | 96,152 | 100,433
+|INA |Interlingua (International Auxiliary Language Association) | 12,194 | 101,705 | 99,401
+|ISH |Esan | 5,221 | 112,815 | 91,400
+|KEA |Kabuverdianu | 5,217 | 102,331 | 90,402
+|TSZ |Purepecha | 4,939 | 79,259 | 89,766
+|GLA |Scottish Gaelic | 8,444 | 108,564 | 87,714
+|TLH |Klingon | 12,602 | 76,817 | 87,087
+|JBO |Lojban | 11,470 | 88,384 | 83,024
+|CSN |Colombian Sign Language | 3,428 | 71,580 | 70,847
+|ALT |Southern Altai | 3,764 | 52,407 | 70,386
+|PSR |Portuguese Sign Language | 3,655 | 70,060 | 69,174
+|TOH |Gitonga | 3,898 | 78,079 | 65,345
+|YUE |Yue Chinese | 5,681 | 77,996 | 62,414
+|FSL |French Sign Language | 2,862 | 58,931 | 56,227
+|AST |Asturian | 9,261 | 59,964 | 54,602
+|FIL |Filipino | 2,125 | 51,507 | 47,398
+|SRD |Sardinian | 5,836 | 50,985 | 43,786
+|SCO |Scots | 853 | 40,927 | 41,327
+|ECS |Ecuadorian Sign Language | 2,019 | 38,677 | 39,731
+|FUR |Friulian | 5,791 | 42,727 | 37,760
+|YID |Yiddish | 4,039 | 32,533 | 33,128
+|MEN |Mende (Sierra Leone) | 1,668 | 36,531 | 28,675
+|GOM |Goan Konkani | 722 | 24,148 | 26,834
+|LIM |Limburgan | 4,491 | 25,040 | 24,410
+|LFN |Lingua Franca Nova | 3,443 | 26,131 | 24,227
+|COR |Cornish | 4,105 | 24,498 | 23,815
+|MAI |Maithili | 4,256 | 23,102 | 20,698
+|VSL |Venezuelan Sign Language | 958 | 17,798 | 18,472
+|CBK |Chavacano | 2,423 | 17,255 | 16,912
+|ILE |Interlingue | 2,570 | 16,439 | 16,599
+|VOL |Volapük | 2,338 | 12,510 | 15,481
+|DTP |Kadazan Dusun | 1,831 | 12,814 | 12,803
+|MIN |Minangkabau | 330 | 11,492 | 11,998
+|TET |Tetum | 406 | 11,359 | 10,648
+|PAM |Pampanga | 1,448 | 8,955 | 10,276
+|ZSM |Standard Malay | 1,158 | 9,170 | 10,106
+|PRL |Peruvian Sign Language | 529 | 8,562 | 9,567
+|ZIB |Zimbabwe Sign Language | 356 | 9,497 | 9,249
+|CRH |Crimean Tatar | 1,361 | 8,351 | 8,996
+|KHA |Khasi | 1,277 | 9,156 | 8,623
+|ASE |American Sign Language | 538 | 8,038 | 8,382
+|BFI |British Sign Language | 384 | 7,005 | 8,302
+|ARQ |Algerian Arabic | 919 | 5,587 | 7,531
+|BOD |Tibetan | 1,029 | 17,081 | 6,956
+|ZPA |Lachiguiri Zapotec | 359 | 6,326 | 6,549
+|LZH |Literary Chinese | 531 | 5,024 | 6,379
+|GOS |Gronings | 986 | 4,727 | 4,963
+|GRC |Ancient Greek (To 1453) | 568 | 3,778 | 4,845
+|NST |Tase Naga | 769 | 5,773 | 4,794
+|CSG |Chilean Sign Language | 329 | 4,320 | 4,734
+|GOR |Gorontalo | 111 | 4,034 | 4,651
+|MZY |Mozambican Sign Language | 244 | 4,364 | 4,447
+|CKB |Central Kurdish | 1,040 | 4,332 | 4,400
+|ANG |Old English (Ca. 450-1100) | 993 | 4,273 | 4,088
+|CSB |Kashubian | 892 | 4,280 | 4,070
+|OTA |Ottoman Turkish (1500-1928) | 622 | 3,564 | 4,032
+|KAS |Kashmiri | 701 | 3,855 | 3,743
+|SAT |Santali | 101 | 3,263 | 3,604
+|HOC |Ho | 631 | 3,038 | 3,520
+|ZZA |Zaza | 505 | 2,895 | 3,194
+|COS |Corsican | 75 | 2,984 | 2,880
+|DZO |Dzongkha | 449 | 8,250 | 2,871
+|INL |Indonesian Sign Language | 206 | 2,459 | 2,814
+|DIQ |Dimli (Individual) | 74 | 1,924 | 2,669
+|GRN |Guarani | 229 | 1,883 | 2,577
+|SWH |Swahili (Individual) | 369 | 1,826 | 2,522
+|WAE |Walser | 512 | 2,416 | 2,483
+|LAD |Ladino | 371 | 2,196 | 2,412
+|ACE |Achinese | 446 | 2,783 | 2,409
+|ASF |Auslan | 149 | 2,413 | 2,322
+|AKA |Akan | 61 | 2,214 | 2,225
+|JAM |Jamaican Creole English | 61 | 2,060 | 2,166
+|ORV |Old Russian | 313 | 1,749 | 2,144
+|PMS |Piemontese | 263 | 2,626 | 2,133
+|GSW |Swiss German | 220 | 1,914 | 2,052
+|XAL |Kalmyk | 268 | 1,624 | 2,041
+|CSF |Cuba Sign Language | 117 | 1,816 | 1,946
+|ZSL |Zambian Sign Language | 96 | 2,299 | 1,915
+|INS |Indian Sign Language | 208 | 1,754 | 1,905
+|NAN |Min Nan Chinese | 88 | 2,352 | 1,894
+|MAX |North Moluccan Malay | 268 | 1,981 | 1,857
+|PRG |Prussian | 213 | 1,526 | 1,717
+|GOT |Gothic | 207 | 4,340 | 1,698
+|BXR |Russia Buriat | 44 | 1,221 | 1,658
+|TCY |Tulu | 47 | 1,265 | 1,541
+|SAH |Yakut | 65 | 1,042 | 1,537
+|FRP |Arpitan | 473 | 1,820 | 1,485
+|KAU |Kanuri | 285 | 2,936 | 1,453
+|BVL |Bolivian Sign Language | 98 | 1,188 | 1,391
+|NOV |Novial | 187 | 1,268 | 1,296
+|HRX |Hunsrik | 214 | 1,300 | 1,247
+|AWA |Awadhi | 248 | 1,249 | 1,246
+|AVK |Kotava | 157 | 933 | 1,221
+|PIH |Pitcairn-Norfolk | 39 | 1,425 | 1,195
+|PYS |Paraguayan Sign Language | 90 | 971 | 1,150
+|NEW |Newari | 38 | 993 | 1,101
+|HIF |Fiji Hindi | 45 | 777 | 1,044
+|MZN |Mazanderani | 47 | 770 | 1,002
+|BHO |Bhojpuri | 55 | 858 | 908
+|SAN |Sanskrit | 150 | 725 | 887
+|HAW |Hawaiian | 94 | 824 | 874
+|DTY |Dotyali | 24 | 874 | 804
+|PDC |Pennsylvania German | 65 | 706 | 734
+|RUE |Rusyn | 113 | 479 | 683
+|KRL |Karelian | 135 | 655 | 682
+|DSB |Lower Sorbian | 37 | 471 | 677
+|SHN |Shan | 150 | 1,926 | 652
+|EXT |Extremaduran | 65 | 588 | 628
+|CHO |Choctaw | 107 | 595 | 624
+|FKV |Kven Finnish | 56 | 528 | 622
+|QYA |Quenya | 100 | 423 | 581
+|GLK |Gilaki | 12 | 268 | 521
+|TPW |Tupí | 87 | 520 | 518
+|TZL |Talossan | 108 | 480 | 483
+|MHR |Eastern Mari | 69 | 379 | 482
+|RMY |Vlax Romani | 10 | 522 | 467
+|NOG |Nogai | 80 | 326 | 464
+|NPI |Nepali (Individual) | 98 | 380 | 457
+|EGL |Emilian | 81 | 499 | 456
+|GCF |Guadeloupean Creole French | 78 | 464 | 446
+|LDN |Láadan | 76 | 464 | 430
+|SFS |South African Sign Language | 30 | 380 | 428
+|MWW |Hmong Daw | 74 | 497 | 408
+|LIJ |Ligurian | 52 | 419 | 385
+|AFB |Gulf Arabic | 69 | 303 | 370
+|KSH |Kölsch | 23 | 385 | 358
+|SGS |Samogitian | 43 | 199 | 356
+|MGM |Mambae | 33 | 282 | 307
+|PNT |Pontic | 5 | 300 | 301
+|MYV |Erzya | 33 | 239 | 300
+|NAP |Neapolitan | 29 | 299 | 249
+|IKE |Eastern Canadian Inuktitut | 43 | 138 | 245
+|HSB |Upper Sorbian | 36 | 194 | 235
+|LLD |Ladin | 20 | 225 | 227
+|FRM |Middle French (Ca. 1400-1600) | 17 | 207 | 220
+|ARY |Moroccan Arabic | 41 | 148 | 216
+|ROH |Romansh | 16 | 205 | 216
+|SMA |Southern Sami | 44 | 178 | 216
+|PPL |Pipil | 29 | 163 | 208
+|SHS |Shuswap | 39 | 243 | 207
+|TLY |Talysh | 43 | 148 | 207
+|PNB |Western Panjabi | 31 | 204 | 194
+|PMY |Papuan Malay | 41 | 189 | 186
+|SJN |Sindarin | 31 | 157 | 186
+|SUX |Sumerian | 36 | 203 | 186
+|SZL |Silesian | 34 | 153 | 177
+|LIV |Liv | 29 | 150 | 176
+|RIF |Tarifit | 34 | 145 | 170
+|BVY |Baybayanon | 23 | 157 | 163
+|MIQ |Mískito | 66 | 165 | 158
+|FUV |Nigerian Fulfulde | 29 | 133 | 157
+|AIN |Ainu (Japan) | 26 | 117 | 154
+|NLV |Orizaba Nahuatl | 14 | 137 | 154
+|GBM |Garhwali | 34 | 162 | 144
+|HDS |Honduras Sign Language | 12 | 94 | 139
+|NON |Old Norse | 13 | 134 | 136
+|ALN |Gheg Albanian | 25 | 133 | 134
+|===
+
+
+== Acknowledgements
+
+All the data consolidated in this work are retrieved from various sources and we do not own the dataset. If you use this dataset, please cite all the articles in `citations.bib` file.
+We are enabling this derived dataset to be easily accessible, with the intention to accelerate the research of language technologies to low resource languages. However, if you view this derived dataset as a violation of intellectual property rights, please let us know, so we will be happy to remove it from the corpus.
+
