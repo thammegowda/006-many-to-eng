@@ -28,10 +28,10 @@ We make this multilingual model readily downloadable and usable as a service, or
 
 == Links
 
-* link:v1/[RTG demo: try many-to-English translation service^]
+* [big red yellow-background]*Demo: link:v1/[👉🏼Many-to-English translation👈🏼🔥^]*
 * link:data-v1.html[Download datasets (v1)^]
 * link:models/[Download trained models^]
-* Get paper: (Coming soon TODO: arxiv link)
+* Get paper: __(Coming soon TODO: arxiv link)__
 * Tools:
 ** MTData: https://github.com/thammegowda/mtdata/ +
    `pip install mtdata`
