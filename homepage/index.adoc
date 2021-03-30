@@ -1,0 +1,132 @@
+=  Many-to-English Translation : RTG Demo
+@ USC Information Sciences Institute, Natural Language Group
+:doctype: article
+:encoding: utf-8
+:lang: en
+:toclevels: 3
+//:sectnums: false
+// :sectnumlevels: 4
+:data-uri:
+:toc: left
+//injects google analytics to <head>
+:docinfo2:
+:source-highlighter: highlight.js
+:description: RTG Many-to-English Translation Demo
+:keywords: RTG, Translation, Machine Translation, NLP Demo, Low Resource Languages
+
+
+While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
+Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
+In this work, we present useful tools for machine translation research:
+
+* link:https://github.com/thammegowda/mtdata/[MTData^]: helps to easily obtain parallel datasets.
+* link:https://isi-nlp.github.io/nlcodec/[NLCodec^]: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.
+* link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^]: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.
+
+We demonstrate their usefulness by creating a multilingual NMT model capable of translating from 500 source languages to English.
+We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
+
+== Links
+
+* [big red yellow-background]*Demo: link:v1/[👉🏼Many-to-English translation👈🏼🔥^]*
+* link:data-v1.html[Download datasets (v1)^]
+* link:models/[Download trained models^]
+* Get paper: __(Coming soon TODO: arxiv link)__
+* Tools:
+** MTData: https://github.com/thammegowda/mtdata/ +
+   `pip install mtdata`
+** NLCodec: https://isi-nlp.github.io/nlcodec/ +
+   `pip install nlcodec`
+** RTG: https://isi-nlp.github.io/rtg/ +
+    `pip install rtg`
+
+== Using Pretrained Models
+
+=== Option 1: Using Docker
+Step 1. Download image and run.
+[source, bash]
+----
+# pick the latest image from https://hub.docker.com/repository/docker/tgowda/rtg-model
+IMAGE=tgowda/rtg-model:500toEng-v1
+
+# To run without using GPU; requires about 5 to 6GB CPU RAM
+docker run --rm -i -p 6060:6060 $IMAGE
+
+# Recommended: use GPU (e.g. device=0)
+docker run --gpus '"device=0"' --rm -i -p 6060:6060 $IMAGE
+----
+//This docker image has everything -- Pytorch and rtg libs as well as model -- required to run a translation service locally.
+WARNING: Docker manager may have memory and CPU core constrain enforced on your host. The above image should be permitted to use at least 6GB RAM. To adjust the RAM and CPU cores for docker image, refer to the instructions on web; e.g. https://stackoverflow.com/a/50770267/1506477
+
+When the docker image runs successfully, you may access the translation service at `http://localhost:6060/`. No data would be shared with any cloud services.
+
+=== Option 2: Without using Docker
+
+**Step 1:** Setup a `conda` environment and install `rtg` library. +
+If conda is missing in your system, link:https://docs.conda.io/en/latest/miniconda.html[please install miniconda^] to get started.
+[source, bash]
+----
+
+conda create -n rtg python=3.7
+conda activate rtg
+pip install rtg  # install rtg and its dependencies
+conda install -c conda-forge uwsgi  # needed to deploy service
+----
+
+**Step 2:** Download model and run
+
+[source, bash]
+----
+# Pick the latest version
+MODEL=rtg-500_eng-tfm-768d.tgz
+# Download
+wget http://rtg.isi.edu/many-eng/models/$MODEL
+# Extract
+tar xvf $MODEL
+# Use uWSGI to run it
+uwsgi --http 127.0.0.1:6060 --module rtg.serve.app:app --pyargv "/path/to/extracted/dir"
+# Alternatively, without uWSGI for quick testing; (not recommended)
+# rtg-serve /path/to/extracted/dir
+# Also, see "rtg-serve -h" to learn optional arguments for --pyargv "<here>" of uWSGI
+----
+
+** Step 3: Interaction
+* Web Interface: a simple web interface is made at http://localhost:6060.
+* REST API is available at http://localhost:6060/translate. +
+An example interaction with REST API:
+[source, bash]
+----
+API=http://localhost:6060/translate
+curl $API --data "source=Comment allez-vous?" \
+   --data "source=Bonne journée"
+
+# API also accepts input as JSON data
+curl -X POST -H "Content-Type: application/json" $API\
+  --data '{"source":["Comment allez-vous?", "Bonne journée"]}' $api
+----
+NOTE: To learn more about RTG service and how to interact with it, go to link:https://isi-nlp.github.io/rtg/#_rtg_serve[RTG Docs^]
+
+Alternatively, use CLI to run in a batch mode:
+[source, bash]
+----
+# `pip install rtg` should have this installed already
+# pip install git+https://github.com/isi-nlp/sacremoses.git@400328e3
+sacremoses tokenize -a -x normalize < input.src > input.src.tok
+
+CUDA_VISIBLE_DEVICES=0   # set GPU device ID
+rtg-decode /path/to/model-extract -if input.src.tok -of output.out
+
+# post process; drop <unk>s, detokenize
+cut -f1 output.out | sed 's/<unk>//g' | sacremoses detokenize > output.out.detok
+----
+
+== Parent-Child Transfer for Low Resource MT
+Refer to the documentation at link:https://isi-nlp.github.io/rtg/#conf-parent-child[RTG Docs^]
+
+== Citation
+Please use the following article to reference this work:
+[souce,bib]
+----
+COMING SOON
+----
+
