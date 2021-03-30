@@ -477,23 +477,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
 Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
-In this work, we present useful tools for machine translation research:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/thammegowda/mtdata/" target="_blank" rel="noopener">MTData</a>: helps to easily obtain parallel datasets.</p>
-</li>
-<li>
-<p><a href="https://isi-nlp.github.io/nlcodec/" target="_blank" rel="noopener">NLCodec</a>: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.</p>
-</li>
-<li>
-<p><a href="https://isi-nlp.github.io/rtg/" target="_blank" rel="noopener">Reader-Translator-Generator (RTG)</a>: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>We demonstrate their usefulness by creating a multilingual NMT model capable of translating from 500 source languages to English.
+In this work, we present useful tools for machine translation research: <a href="https://github.com/thammegowda/mtdata/" target="_blank" rel="noopener">MTData</a>, <a href="https://isi-nlp.github.io/nlcodec/" target="_blank" rel="noopener">NLCodec</a>,
+and <a href="https://isi-nlp.github.io/rtg/" target="_blank" rel="noopener">Reader-Translator-Generator (RTG)</a>.
+We demonstrate their usefulness by creating a multilingual NMT model capable of translating from 500 source languages to English.
 We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.</p>
 </div>
 </div>
@@ -533,6 +519,9 @@ We make this multilingual model readily downloadable and usable as a service, or
 </li>
 </ul>
 </div>
+</li>
+<li>
+<p><small>  Scripts, tables, and charts: <a href="https://github.com/thammegowda/006-many-to-eng" class="bare">https://github.com/thammegowda/006-many-to-eng</a> </small> </p>
 </li>
 </ul>
 </div>
@@ -594,7 +583,7 @@ conda install -c conda-forge uwsgi  # needed to deploy service</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Pick the latest version
-MODEL=rtg-500_eng-tfm-768d.tgz
+MODEL=rtg500eng-tfm9L6L768d-bsz720k-stp200k-ens05.tgz
 # Download
 wget http://rtg.isi.edu/many-eng/models/$MODEL
 # Extract
@@ -690,7 +679,7 @@ cut -f1 output.out | sed 's/&lt;unk&gt;//g' | sacremoses detokenize &gt; output.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-27 19:16:16 -0700
+Last updated 2021-03-30 10:59:54 -0700
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>

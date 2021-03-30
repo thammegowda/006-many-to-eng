@@ -17,12 +17,8 @@
 
 While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
 Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
-In this work, we present useful tools for machine translation research:
-
-* link:https://github.com/thammegowda/mtdata/[MTData^]: helps to easily obtain parallel datasets.
-* link:https://isi-nlp.github.io/nlcodec/[NLCodec^]: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.
-* link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^]: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.
-
+In this work, we present useful tools for machine translation research: link:https://github.com/thammegowda/mtdata/[MTData^], link:https://isi-nlp.github.io/nlcodec/[NLCodec^],
+and link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^].
 We demonstrate their usefulness by creating a multilingual NMT model capable of translating from 500 source languages to English.
 We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
 
@@ -39,6 +35,7 @@ We make this multilingual model readily downloadable and usable as a service, or
    `pip install nlcodec`
 ** RTG: https://isi-nlp.github.io/rtg/ +
     `pip install rtg`
+* +++<small> +++ Scripts, tables, and charts: https://github.com/thammegowda/006-many-to-eng +++</small> +++
 
 == Using Pretrained Models
 
@@ -78,7 +75,7 @@ conda install -c conda-forge uwsgi  # needed to deploy service
 [source, bash]
 ----
 # Pick the latest version
-MODEL=rtg-500_eng-tfm-768d.tgz
+MODEL=rtg500eng-tfm9L6L768d-bsz720k-stp200k-ens05.tgz
 # Download
 wget http://rtg.isi.edu/many-eng/models/$MODEL
 # Extract
