@@ -9,7 +9,7 @@ tokenize(){
     sacremoses normalize -q -d -p -c tokenize -a -x -p :web:
 }
 
-for lang in sme bre kor; do
+for lang in sme bre ; do
     data=$DATA/$lang-eng
     
     [[ -f $data//mtdata.signature.txt ]] || 
