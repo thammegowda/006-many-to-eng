@@ -17,12 +17,8 @@
 
 While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
 Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
-In this work, we present useful tools for machine translation research:
-
-* link:https://github.com/thammegowda/mtdata/[MTData^]: helps to easily obtain parallel datasets.
-* link:https://isi-nlp.github.io/nlcodec/[NLCodec^]: a vocabulary manager and storage layer for transforming sentences to integer sequences, that is efficient and scalable.
-* link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^]: a feature-rich Pytorch-backed neural machine translation (NMT) toolkit that supports reproducible experiments.
-
+In this work, we present useful tools for machine translation research: link:https://github.com/thammegowda/mtdata/[MTData^], link:https://isi-nlp.github.io/nlcodec/[NLCodec^],
+and link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^].
 We demonstrate their usefulness by creating a multilingual NMT model capable of translating from 500 source languages to English.
 We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
 
@@ -39,6 +35,7 @@ We make this multilingual model readily downloadable and usable as a service, or
    `pip install nlcodec`
 ** RTG: https://isi-nlp.github.io/rtg/ +
     `pip install rtg`
+* +++<small> +++ Scripts, tables, and charts: https://github.com/thammegowda/006-many-to-eng +++</small> +++
 
 == Using Pretrained Models
 
@@ -69,16 +66,16 @@ If conda is missing in your system, link:https://docs.conda.io/en/latest/minicon
 
 conda create -n rtg python=3.7
 conda activate rtg
-pip install rtg  # install rtg and its dependencies
+pip install rtg==0.5.0  # install rtg and its dependencies
 conda install -c conda-forge uwsgi  # needed to deploy service
 ----
 
-**Step 2:** Download model and run
+**Step 2:** Download a model and run
 
 [source, bash]
 ----
 # Pick the latest version
-MODEL=rtg-500_eng-tfm-768d.tgz
+MODEL=rtg500eng-tfm9L6L768d-bsz720k-stp200k-ens05.tgz
 # Download
 wget http://rtg.isi.edu/many-eng/models/$MODEL
 # Extract
@@ -90,7 +87,7 @@ uwsgi --http 127.0.0.1:6060 --module rtg.serve.app:app --pyargv "/path/to/extrac
 # Also, see "rtg-serve -h" to learn optional arguments for --pyargv "<here>" of uWSGI
 ----
 
-** Step 3: Interaction
+=== Interaction with REST API
 * Web Interface: a simple web interface is made at http://localhost:6060.
 * REST API is available at http://localhost:6060/translate. +
 An example interaction with REST API:
@@ -102,16 +99,16 @@ curl $API --data "source=Comment allez-vous?" \
 
 # API also accepts input as JSON data
 curl -X POST -H "Content-Type: application/json" $API\
-  --data '{"source":["Comment allez-vous?", "Bonne journée"]}' $api
+  --data '{"source":["Comment allez-vous?", "Bonne journée"]}'
 ----
 NOTE: To learn more about RTG service and how to interact with it, go to link:https://isi-nlp.github.io/rtg/#_rtg_serve[RTG Docs^]
 
-Alternatively, use CLI to run in a batch mode:
+=== Decoding in Batch Mode
 [source, bash]
 ----
-# `pip install rtg` should have this installed already
-# pip install git+https://github.com/isi-nlp/sacremoses.git@400328e3
-sacremoses tokenize -a -x normalize < input.src > input.src.tok
+# `pip install rtg==0.5.0` should have already installed sacremoses-xt
+pip install sacremoses-xt==0.0.44
+sacremoses normalize -q -d -p -c tokenize -a -x -p :web: < input.src > input.src.tok
 
 CUDA_VISIBLE_DEVICES=0   # set GPU device ID
 rtg-decode /path/to/model-extract -if input.src.tok -of output.out
