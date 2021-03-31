@@ -4,6 +4,7 @@
 
 DATA=data
 
+# pip install sacremoses-xt==0.0.44  # this is the version used
 
 tokenize(){
     sacremoses normalize -q -d -p -c tokenize -a -x -p :web:
