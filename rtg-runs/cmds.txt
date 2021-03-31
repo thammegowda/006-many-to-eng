@@ -1,0 +1,23 @@
+
+# cmds for running all tests
+
+EXP=000-tfm-big-768d
+tests=$EXP/test_128k
+
+# create links
+  ls datav1/tests/*.eng |  while read r; do src=${r##*-}; src=${src/_eng.eng}; src_tok=${r/.eng/.$src}.tok;  ln -s ../../$src_tok $tests/$(basename $src_tok);   done
+  ls datav1/tests/*.eng |  while read r; do src=${r##*-}; ln -s ../../$r $tests/$(basename $r);   done
+
+# decode all
+  for i in $tests/*.tok ; do o=${i%%.*}.out; echo sbatch --gres=gpu:p100:1 -J $(basename $i| sed 's/\..*//') rtg-decode.sh -d $EXP -i $i -o $o; done
+
+
+# detokenize
+  sed 's/<unk>//g' | sacremoses detokenize | sed 's/[\.,]\{3,\}/./g'
+  for i in $tests/*.out; do echo " cut -f1 $i |sed 's/<unk>//g' | sacremoses detokenize | sed 's/[\.,]\{3,\}/./g' > $i.detok";   done  | parallel -j 20
+
+# score
+  for i in $tests/*.out.detok; do
+     name=$(basename $i | sed 's/.out.detok//');
+     echo "(echo $name && sacrebleu -m bleu macrof chrf -lc -b ${i/.out.detok/.eng} < $i )| tr '\n' ' '; echo; ";
+  done | parallel -j 20 > $tests-bleu+macrof+chrf.txt
