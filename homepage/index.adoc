@@ -27,7 +27,7 @@ We make this multilingual model readily downloadable and usable as a service, or
 * [big red yellow-background]*Demo: link:v1/[👉🏼Many-to-English translation👈🏼🔥^]*
 * link:data-v1.html[Download datasets (v1)^]
 * link:models/[Download trained models^]
-* Get paper: __(Coming soon TODO: arxiv link)__
+* Get paper: https://arxiv.org/abs/2104.00290 link:https://arxiv.org/pdf/2104.00290.pdf[Get PDF]
 * Tools:
 ** MTData: https://github.com/thammegowda/mtdata/ +
    `pip install mtdata`
@@ -120,10 +120,21 @@ cut -f1 output.out | sed 's/<unk>//g' | sacremoses detokenize > output.out.detok
 == Parent-Child Transfer for Low Resource MT
 Refer to the documentation at link:https://isi-nlp.github.io/rtg/#conf-parent-child[RTG Docs^]
 
+Learning rate parameter of child model trainer is a crucial parameter: higher learning rate would destroy parent model's weights, and lower learning rate means less adaptation to child dataset.
+Hence, learning rate has to be just right; refer to `conf.yml` files in https://github.com/thammegowda/006-many-to-eng/tree/master/lowres-xfer
+
+
 == Citation
 Please use the following article to reference this work:
 [souce,bib]
 ----
-COMING SOON
+@misc{gowda2021manytoenglish,
+      title={Many-to-English Machine Translation Tools, Data, and Pretrained Models},
+      author={Thamme Gowda and Zhao Zhang and Chris A Mattmann and Jonathan May},
+      year={2021},
+      eprint={2104.00290},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ----
 

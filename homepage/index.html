@@ -501,7 +501,7 @@ We make this multilingual model readily downloadable and usable as a service, or
 <p><a href="models/" target="_blank" rel="noopener">Download trained models</a></p>
 </li>
 <li>
-<p>Get paper: <em>(Coming soon TODO: arxiv link)</em></p>
+<p>Get paper: <a href="https://arxiv.org/abs/2104.00290" class="bare">https://arxiv.org/abs/2104.00290</a> <a href="https://arxiv.org/pdf/2104.00290.pdf">Get PDF</a></p>
 </li>
 <li>
 <p>Tools:</p>
@@ -659,6 +659,10 @@ cut -f1 output.out | sed 's/&lt;unk&gt;//g' | sacremoses detokenize &gt; output.
 <div class="paragraph">
 <p>Refer to the documentation at <a href="https://isi-nlp.github.io/rtg/#conf-parent-child" target="_blank" rel="noopener">RTG Docs</a></p>
 </div>
+<div class="paragraph">
+<p>Learning rate parameter of child model trainer is a crucial parameter: higher learning rate would destroy parent model&#8217;s weights, and lower learning rate means less adaptation to child dataset.
+Hence, learning rate has to be just right; refer to <code>conf.yml</code> files in <a href="https://github.com/thammegowda/006-many-to-eng/tree/master/lowres-xfer" class="bare">https://github.com/thammegowda/006-many-to-eng/tree/master/lowres-xfer</a></p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -669,7 +673,14 @@ cut -f1 output.out | sed 's/&lt;unk&gt;//g' | sacremoses detokenize &gt; output.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>COMING SOON</pre>
+<pre>@misc{gowda2021manytoenglish,
+      title={Many-to-English Machine Translation Tools, Data, and Pretrained Models},
+      author={Thamme Gowda and Zhao Zhang and Chris A Mattmann and Jonathan May},
+      year={2021},
+      eprint={2104.00290},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}</pre>
 </div>
 </div>
 </div>
@@ -677,7 +688,7 @@ cut -f1 output.out | sed 's/&lt;unk&gt;//g' | sacremoses detokenize &gt; output.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-30 11:10:01 -0700
+Last updated 2021-04-02 11:19:30 -0700
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
