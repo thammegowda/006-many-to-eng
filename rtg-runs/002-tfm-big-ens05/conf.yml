@@ -66,12 +66,12 @@ tester:
     - datav1/devs-combined.noNULL.unesc.shuf10k.eng
 trainer:
   init_args:
-    chunk_size: 1   # generation in chunks of time steps to reduce memory consumptio
-    grad_accum: 4
-  batch_size: [3000, 200]   # not exceeding these many tokens (including paddings). in tensor2tensor it is mean batch size
+    chunk_size: 5   # generation in chunks of time steps to reduce memory consumptio
+    grad_accum: 5
+  batch_size: [18000, 1800]   # not exceeding these many tokens (including paddings). in tensor2tensor it is mean batch size
   check_point: 1000  # how often to checkpoint?
   keep_models: 20   # how many checkpoints to keep on disk (small enough to save disk, large enough for checkpt averaging
-  steps: 128000   # how many steps to train
+  steps: 200000   # how many steps to train
   keep_in_mem: false
   early_stop:
     enabled: true
@@ -79,4 +79,4 @@ trainer:
     signi_round: 5
     patience: 10
     min_steps: 64000
-updated_at: '2021-03-29T18:14:54.012514'
+updated_at: '2021-03-12T16:49:52.133641'
