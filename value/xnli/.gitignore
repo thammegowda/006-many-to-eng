@@ -1,0 +1,6 @@
+*.zip
+XNLI-1.0/
+multinli_1.0/
+__MACOSX
+*.tsv
+.idea/
