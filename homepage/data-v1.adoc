@@ -7,6 +7,7 @@
 //:sectnums: false
 // :sectnumlevels: 4
 :data-uri:
+:hide-uri-scheme:
 :toc: left
 //injects google analytics to <head>
 :docinfo2:
@@ -15,7 +16,10 @@
 :keywords: RTG, Translation, Machine Translation, NLP dataset, Low Resource Languages
 
 
-Datasets are available at http://rtg.isi.edu/many-eng/data/v1/
+Datasets are available at
+
+* http://rtg.isi.edu/many-eng/data/v1/
+* https://opus.nlpl.eu/MT560.php
 
 [source,YAML]
 ----

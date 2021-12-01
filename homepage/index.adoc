@@ -7,6 +7,7 @@
 //:sectnums: false
 // :sectnumlevels: 4
 :data-uri:
+:hide-uri-scheme:
 :toc: left
 //injects google analytics to <head>
 :docinfo2:
@@ -27,7 +28,7 @@ We make this multilingual model readily downloadable and usable as a service, or
 * [big red yellow-background]*Demo: link:v1/[👉🏼Many-to-English translation👈🏼🔥^]*
 * link:data-v1.html[Download datasets (v1)^]
 * link:models/[Download trained models^]
-* Get paper: https://arxiv.org/abs/2104.00290 link:https://arxiv.org/pdf/2104.00290.pdf[Get PDF]
+* Get paper: https://aclanthology.org/2021.acl-demo.37/ link:https://aclanthology.org/2021.acl-demo.37.pdf[Get PDF]
 * Tools:
 ** MTData: https://github.com/thammegowda/mtdata/ +
    `pip install mtdata`
@@ -35,7 +36,7 @@ We make this multilingual model readily downloadable and usable as a service, or
    `pip install nlcodec`
 ** RTG: https://isi-nlp.github.io/rtg/ +
     `pip install rtg`
-* +++<small> +++ Scripts, tables, and charts: https://github.com/thammegowda/006-many-to-eng +++</small> +++
+* Scripts, tables, and charts: https://github.com/thammegowda/006-many-to-eng
 
 == Using Pretrained Models
 
@@ -117,6 +118,7 @@ rtg-decode /path/to/model-extract -if input.src.tok -of output.out
 cut -f1 output.out | sed 's/<unk>//g' | sacremoses detokenize > output.out.detok
 ----
 
+[#transferlearn]
 == Parent-Child Transfer for Low Resource MT
 Refer to the documentation at link:https://isi-nlp.github.io/rtg/#conf-parent-child[RTG Docs^]
 
@@ -126,15 +128,29 @@ Hence, learning rate has to be just right; refer to `conf.yml` files in https://
 
 == Citation
 Please use the following article to reference this work:
+
+https://aclanthology.org/2021.acl-demo.37/
+
 [souce,bib]
 ----
-@misc{gowda2021manytoenglish,
-      title={Many-to-English Machine Translation Tools, Data, and Pretrained Models},
-      author={Thamme Gowda and Zhao Zhang and Chris A Mattmann and Jonathan May},
-      year={2021},
-      eprint={2104.00290},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{gowda-etal-2021-many,
+    title = "Many-to-{E}nglish Machine Translation Tools, Data, and Pretrained Models",
+    author = "Gowda, Thamme  and
+      Zhang, Zhao  and
+      Mattmann, Chris  and
+      May, Jonathan",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing: System Demonstrations",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-demo.37",
+    doi = "10.18653/v1/2021.acl-demo.37",
+    pages = "306--316",
 }
 ----
 
+== Acknowledgments
+
+* The research is based upon work supported by the Office of the Director of National Intelligence (ODNI), Intelligence Advanced Research Projects Activity (IARPA), via AFRL Contract #FA8650-17-C-9116. The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of the ODNI, IARPA, or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright annotation thereon.
+* This material is based on research sponsored by Air Force Research Laboratory (AFRL) under agreement number FA8750-19-1-1000. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation therein.
