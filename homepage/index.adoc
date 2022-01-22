@@ -15,8 +15,9 @@
 :description: RTG Many-to-English Translation Demo
 :keywords: RTG, Translation, Machine Translation, NLP Demo, Low Resource Languages
 
+https://www.ibidemgroup.com/edu/traduccion-machine-translation-datos-modelos/[_Read this in Spanish |Lee esto en Español_^]
 
-While there are more than 7000 languages in the world, most translation research efforts have targeted a few high resource languages.
+There are more than 7000 languages in the world, but most translation research efforts have targeted a few high resource languages.
 Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
 In this work, we present useful tools for machine translation research: link:https://github.com/thammegowda/mtdata/[MTData^], link:https://isi-nlp.github.io/nlcodec/[NLCodec^],
 and link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^].
