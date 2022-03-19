@@ -1,0 +1,623 @@
+#	ISO 639-3	Name	Sentences	Source Toks	English Toks
+		Total	2,314,289,643	36,842,400,917	37,303,550,534
+1	spa	Spanish	253,668,574	5,279,377,335	4,919,556,610
+2	deu	German	177,975,226	3,001,483,404	3,237,466,426
+3	fra	French	162,248,222	3,884,645,161	3,429,824,104
+4	ita	Italian	118,596,082	1,895,905,711	1,861,669,411
+5	por	Portuguese	116,723,887	1,634,277,485	1,660,940,634
+6	rus	Russian	80,564,317	1,247,584,821	1,355,254,223
+7	ara	Arabic	79,055,464	1,235,068,770	1,411,260,178
+8	pol	Polish	78,923,932	908,381,377	1,050,278,687
+9	ces	Czech	72,609,894	852,935,694	980,963,507
+10	nld	Dutch	69,859,259	1,055,952,154	1,092,597,326
+11	zho	Chinese	64,117,920	1,663,029,087	1,058,219,295
+12	tur	Turkish	62,206,228	561,304,806	704,879,879
+13	ron	Romanian	61,195,111	762,376,580	766,302,572
+14	ell	Modern Greek (1453-)	60,037,778	802,595,601	867,222,424
+15	hun	Hungarian	58,950,748	637,739,268	750,176,749
+16	fin	Finnish	53,789,771	577,815,600	805,043,805
+17	bul	Bulgarian	53,463,643	620,500,266	672,212,878
+18	swe	Swedish	49,398,648	698,791,704	791,782,502
+19	dan	Danish	45,130,723	736,882,597	791,521,162
+20	hrv	Croatian	39,188,893	413,531,244	487,807,222
+21	heb	Hebrew	32,441,143	314,082,673	385,611,770
+22	srp	Serbian	31,636,021	301,614,880	363,921,637
+23	slv	Slovenian	29,339,686	388,623,228	451,821,921
+24	jpn	Japanese	28,981,617	432,653,502	363,742,586
+25	ind	Indonesian	25,971,252	289,945,425	307,157,909
+26	est	Estonian	25,959,843	346,264,437	448,536,310
+27	slk	Slovak	25,275,005	400,090,625	449,674,253
+28	nor	Norwegian	24,622,569	393,029,377	425,300,573
+29	hin	Hindi	19,565,950	380,660,603	352,369,524
+30	vie	Vietnamese	19,154,811	345,867,441	275,251,843
+31	kor	Korean	18,082,581	412,593,911	225,083,933
+32	lit	Lithuanian	18,056,267	316,056,829	374,533,537
+33	fas	Persian	17,264,264	215,055,984	211,627,357
+34	lav	Latvian	16,002,864	298,928,041	350,828,193
+35	tha	Thai	14,828,467	254,248,107	227,551,101
+36	ukr	Ukrainian	13,731,503	211,778,190	235,265,464
+37	ben	Bengali	12,966,849	169,193,764	183,512,421
+38	bos	Bosnian	12,641,559	110,530,611	134,779,963
+39	cat	Catalan	9,326,671	186,856,073	170,483,544
+40	mal	Malayalam	8,364,447	87,317,212	129,515,625
+41	tgl	Tagalog	7,768,323	80,270,568	74,870,808
+42	msa	Malay	7,310,950	101,226,403	103,678,883
+43	tam	Tamil	7,207,971	81,504,209	106,044,491
+44	tel	Telugu	7,130,362	82,243,282	108,460,238
+45	mlt	Maltese	6,237,081	201,765,258	158,648,210
+46	mkd	Macedonian	6,057,790	80,214,670	85,781,252
+47	sqi	Albanian	5,256,915	77,999,548	75,990,908
+48	isl	Icelandic	5,082,666	80,124,119	88,677,794
+49	pan	Panjabi	4,994,289	108,362,544	102,168,503
+50	guj	Gujarati	4,939,763	74,080,744	83,828,300
+51	mar	Marathi	4,906,647	58,968,852	69,396,973
+52	kan	Kannada	4,575,413	40,771,254	54,676,162
+53	swa	Swahili	3,205,843	42,560,576	45,279,169
+54	afr	Afrikaans	2,809,410	53,573,711	51,376,322
+55	urd	Urdu	2,720,004	67,312,118	56,632,409
+56	eus	Basque	2,242,400	26,372,037	33,074,627
+57	kat	Georgian	1,999,450	27,458,248	35,491,982
+58	aze	Azerbaijani	1,883,613	26,100,570	30,740,334
+59	sin	Sinhala	1,793,201	22,108,819	27,173,749
+60	nob	Norwegian Bokmål	1,726,761	31,583,907	35,794,508
+61	jav	Javanese	1,587,444	8,848,159	9,072,046
+62	bel	Belarusian	1,479,649	25,891,752	28,618,056
+63	hbs	Serbo-Croatian	1,454,703	27,548,866	31,028,525
+64	glg	Galician	1,437,243	26,686,128	26,336,449
+65	hye	Armenian	1,419,203	23,287,198	26,485,597
+66	epo	Esperanto	1,388,826	22,067,450	23,058,245
+67	mlg	Malagasy	1,231,046	25,930,950	23,469,140
+68	ceb	Cebuano	1,218,273	24,245,069	21,771,595
+69	xho	Xhosa	1,201,422	15,897,253	20,904,940
+70	pus	Pushto	1,196,081	16,856,328	15,727,700
+71	zul	Zulu	1,115,794	16,024,047	20,707,959
+72	ori	Oriya	1,092,528	13,064,193	15,012,212
+73	amh	Amharic	1,027,344	15,494,687	20,578,235
+74	cym	Welsh	1,000,739	15,843,410	15,172,492
+75	nep	Nepali	995,864	13,341,958	16,474,036
+76	kaz	Kazakh	944,584	11,747,980	14,094,209
+77	nya	Nyanja	925,583	15,384,350	17,441,340
+78	ilo	Iloko	919,162	18,277,002	17,202,744
+79	mya	Burmese	900,544	25,948,094	18,772,742
+80	tsn	Tswana	866,529	20,811,868	15,368,526
+81	sna	Shona	863,878	13,153,931	17,144,608
+82	hil	Hiligaynon	825,933	17,910,874	15,622,829
+83	tso	Tsonga	778,008	17,769,145	14,732,648
+84	mon	Mongolian	765,300	9,272,762	10,680,787
+85	hat	Haitian	759,321	14,435,753	12,916,497
+86	iku	Inuktitut	746,626	8,449,431	17,190,991
+87	hau	Hausa	663,084	11,648,689	10,824,093
+88	ewe	Ewe	599,479	13,025,825	11,330,365
+89	yor	Yoruba	596,112	16,637,961	11,174,615
+90	khm	Khmer	593,391	13,924,064	10,119,979
+91	nso	Pedi	587,885	14,141,122	10,830,977
+92	ibo	Igbo	579,217	13,518,003	10,722,100
+93	lin	Lingala	569,608	11,208,047	10,481,908
+94	tgk	Tajik	561,689	8,382,627	9,265,848
+95	tah	Tahitian	559,201	16,938,664	10,752,789
+96	srn	Sranan Tongo	556,794	14,271,952	10,838,516
+97	twi	Twi	545,891	11,491,836	10,266,119
+98	kir	Kirghiz	528,368	7,405,988	9,203,721
+99	som	Somali	526,424	7,487,392	8,650,726
+100	kin	Kinyarwanda	516,672	8,987,376	9,695,846
+101	sun	Sundanese	504,253	6,283,228	6,573,601
+102	bis	Bislama	486,314	12,213,952	9,135,441
+103	gle	Irish	471,263	10,281,209	9,558,910
+104	bcl	Central Bikol	469,102	10,344,866	9,067,112
+105	loz	Lozi	419,140	9,650,373	7,949,230
+106	gaa	Ga	415,709	9,417,753	7,928,833
+107	tat	Tatar	393,396	6,333,739	7,675,820
+108	tpi	Tok Pisin	389,302	9,260,948	7,207,274
+109	bem	Bemba (Zambia)	387,645	6,618,150	7,222,344
+110	pap	Papiamento	387,566	8,266,408	7,260,620
+111	smo	Samoan	369,918	9,419,838	6,998,244
+112	run	Rundi	367,844	6,604,320	6,874,435
+113	fij	Fijian	363,957	7,971,843	6,780,823
+114	nds	Low German	349,920	4,421,714	4,909,613
+115	tir	Tigrinya	337,989	5,341,594	6,603,145
+116	efi	Efik	336,539	7,394,238	6,333,038
+117	ton	Tonga (Tonga Islands)	329,618	11,312,726	6,161,139
+118	kur	Kurdish	323,271	7,380,867	7,139,218
+119	lue	Luvale	321,193	4,775,044	6,062,455
+120	asm	Assamese	298,723	3,693,735	4,398,208
+121	toi	Tonga (Zambia)	296,174	4,411,522	5,502,863
+122	lua	Luba-Lulua	295,047	5,558,950	5,556,044
+123	guw	Gun	290,144	6,721,034	5,454,034
+124	pag	Pangasinan	285,597	5,672,775	5,371,723
+125	war	Waray (Philippines)	285,349	6,311,807	5,374,533
+126	bre	Breton	273,188	2,735,231	2,447,672
+127	pis	Pijin	266,652	5,374,116	5,030,924
+128	sag	Sango	252,755	6,621,876	4,802,606
+129	lug	Ganda	248,562	3,992,062	4,492,236
+130	bsb	Brunei Bisaya	241,086	3,583,360	3,113,443
+131	mah	Marshallese	236,556	5,814,572	4,474,163
+132	tum	Tumbuka	233,890	3,645,348	4,356,059
+133	hmo	Hiri Motu	232,428	4,847,883	4,342,356
+134	oss	Ossetian	229,483	3,868,514	4,430,070
+135	tll	Tetela	224,060	4,258,478	4,194,454
+136	kqn	Kaonde	221,670	3,756,335	4,111,752
+137	pon	Pohnpeian	220,925	4,440,396	4,202,464
+138	niu	Niuean	217,182	5,476,212	4,017,789
+139	iso	Isoko	216,873	4,945,777	4,051,792
+140	lat	Latin	216,432	3,110,815	4,429,358
+141	yap	Yapese	215,210	6,304,624	4,108,322
+142	umb	Umbundu	213,522	4,010,262	3,945,677
+143	chk	Chuukese	210,398	4,416,540	4,055,497
+144	kon	Kongo	210,169	4,457,644	3,902,525
+145	kal	Kalaallisut	209,623	2,402,283	3,936,525
+146	ven	Venda	206,815	4,579,633	3,815,390
+147	gil	Gilbertese	205,404	4,801,402	3,901,907
+148	oci	Occitan (Post 1500)	205,314	4,004,337	3,929,607
+149	lub	Luba-Katanga	199,037	3,563,612	3,749,988
+150	mri	Maori	195,178	4,711,991	3,990,738
+151	fry	Western Frisian	195,005	2,995,668	3,658,550
+152	zne	Zande (Individual)	191,586	4,426,708	3,609,304
+153	crs	Seselwa Creole French	191,197	3,885,810	3,543,049
+154	lus	Lushai	189,473	4,329,926	3,547,696
+155	mos	Mossi	188,023	4,740,841	3,523,787
+156	nno	Norwegian Nynorsk	187,835	1,668,127	1,690,134
+157	tiv	Tiv	185,919	4,840,223	3,481,715
+158	mfe	Morisyen	183,172	4,103,579	3,377,373
+159	orm	Oromo	181,306	2,838,514	3,040,872
+160	lao	Lao	179,072	3,181,292	3,138,522
+161	tvl	Tuvalu	174,065	5,030,740	3,314,644
+162	kwy	San Salvador Kongo	171,939	2,989,433	3,133,212
+163	yua	Yucateco	169,246	3,537,319	3,303,093
+164	uzb	Uzbek	165,034	2,609,380	2,820,005
+165	wls	Wallisian	155,683	4,014,401	2,877,923
+166	zai	Isthmus Zapotec	147,137	2,739,592	2,737,032
+167	gug	Paraguayan Guaraní	144,878	2,159,687	2,752,993
+168	aym	Aymara	143,522	1,980,996	2,743,295
+169	bci	Baoulé	143,225	3,706,794	2,600,991
+170	tzo	Tzotzil	140,931	3,005,279	2,679,131
+171	ssw	Swati	138,797	1,826,677	2,377,984
+172	luo	Luo (Kenya And Tanzania)	137,861	2,619,113	2,505,480
+173	lun	Lunda	135,471	1,866,210	2,483,887
+174	que	Quechua	134,477	1,742,305	2,547,859
+175	rnd	Ruund	134,093	2,453,057	2,446,620
+176	quz	Cusco Quechua	128,347	1,657,901	2,460,850
+177	tuk	Turkmen	125,910	1,771,066	2,278,843
+178	wal	Wolaytta	121,889	1,889,023	2,322,586
+179	nyk	Nyaneka	116,786	1,757,830	2,134,339
+180	quy	Ayacucho Quechua	114,510	1,410,901	2,173,084
+181	tdt	Tetun Dili	112,319	2,387,269	2,103,986
+182	bzs	Brazilian Sign Language	111,833	2,058,578	2,068,712
+183	ltz	Luxembourgish	109,923	1,582,213	1,947,571
+184	kwn	Kwangali	107,197	1,715,529	1,938,333
+185	wol	Wolof	102,164	1,012,345	939,929
+186	swc	Congo Swahili	101,811	1,769,704	1,844,561
+187	kua	Kuanyama	101,249	1,947,962	1,843,253
+188	ndo	Ndonga	98,863	1,857,396	1,797,795
+189	bak	Bashkir	96,353	1,337,669	1,733,722
+190	kik	Kikuyu	94,649	1,719,465	1,733,973
+191	snd	Sindhi	94,473	2,827,926	2,805,957
+192	uig	Uighur	93,302	2,267,564	2,450,089
+193	nzi	Nzima	93,246	1,805,503	1,683,130
+194	div	Dhivehi	93,076	2,588,152	2,498,051
+195	arg	Aragonese	91,536	1,806,009	1,691,482
+196	kmb	Kimbundu	90,755	1,968,384	1,618,168
+197	top	Papantla Totonac	87,046	1,346,132	1,619,234
+198	tsc	Tswa	84,521	1,915,560	1,531,811
+199	jsl	Japanese Sign Language	84,021	2,230,725	1,519,410
+200	fao	Faroese	80,766	1,278,203	1,631,708
+201	ise	Italian Sign Language	80,621	1,507,107	1,526,663
+202	gym	Ngäbere	78,833	1,622,106	1,455,179
+203	ach	Acoli	73,276	1,500,241	1,322,044
+204	zlm	Malay (Individual)	72,869	1,142,624	1,368,006
+205	vmw	Makhuwa	72,868	1,182,779	1,325,331
+206	ful	Fulah	71,335	864,835	634,180
+207	hne	Chhattisgarhi	70,961	444,623	372,650
+208	chv	Chuvash	68,987	1,038,292	1,300,512
+209	rar	Rarotongan	67,802	1,641,489	1,179,057
+210	tog	Tonga (Nyasa)	67,217	1,054,854	1,227,043
+211	bar	Bavarian	66,713	925,275	1,048,612
+212	mco	Coatlán Mixe	66,159	1,098,536	1,259,613
+213	pes	Iranian Persian	65,551	1,586,213	1,792,204
+214	kek	Kekchí	63,382	2,237,930	1,839,837
+215	ada	Adangme	63,016	1,668,455	1,128,094
+216	aed	Argentine Sign Language	62,993	1,198,716	1,212,898
+217	ckb	Central Kurdish	62,727	805,937	876,164
+218	pck	Paite Chin	61,172	1,773,658	1,800,544
+219	dje	Zarma	60,992	1,948,721	1,780,545
+220	plt	Plateau Malagasy	60,812	1,844,608	1,790,381
+221	dhv	Dehu	59,304	1,516,299	1,081,402
+222	arz	Egyptian Arabic	59,273	1,040,607	1,217,443
+223	ncj	Northern Puebla Nahuatl	58,561	956,551	1,079,883
+224	cab	Garifuna	58,494	1,007,492	1,085,354
+225	mam	Mam	57,127	1,423,370	1,168,787
+226	wln	Walloon	56,623	429,679	305,452
+227	guc	Wayuu	53,685	829,204	981,093
+228	djk	Eastern Maroon Creole	53,221	1,500,873	1,039,928
+229	seh	Sena	52,346	857,567	942,338
+230	ido	Ido	51,442	847,598	925,707
+231	kam	Kamba (Kenya)	51,134	959,544	929,605
+232	sop	Songe	50,760	935,482	921,385
+233	nyn	Nyankole	50,320	808,018	908,313
+234	qvi	Imbabura Highland Quichua	50,226	667,059	917,189
+235	sid	Sidamo	46,475	685,282	840,289
+236	cak	Kaqchikel	46,242	1,296,149	961,305
+237	wuu	Wu Chinese	44,979	1,401,488	981,672
+238	rsl	Russian Sign Language	44,580	704,592	851,505
+239	mgr	Mambwe-Lungu	43,613	729,826	779,743
+240	yao	Yao	43,430	675,600	786,686
+241	lmo	Lombard	43,257	956,126	916,365
+242	ast	Asturian	43,053	323,110	285,999
+243	cmn	Mandarin Chinese	42,771	480,846	364,575
+244	kri	Krio	42,355	1,001,068	750,234
+245	hmn	Hmong	41,767	908,683	728,027
+246	kab	Kabyle	41,472	639,490	583,828
+247	ngl	Lomwe	39,344	599,003	692,267
+248	fil	Filipino	38,927	595,383	564,897
+249	kss	Southern Kisi	37,713	776,337	653,867
+250	ncx	Central Puebla Nahuatl	36,281	521,485	651,884
+251	koo	Konzo	36,215	576,098	638,761
+252	cjk	Chokwe	35,889	603,308	626,882
+253	bbc	Batak Toba	35,299	576,883	619,703
+254	srm	Saramaccan	34,820	852,215	596,927
+255	iba	Iban	34,587	616,831	589,527
+256	tcf	Malinaltepec Me'Phaa	34,575	848,660	624,296
+257	nia	Nias	34,220	583,584	603,116
+258	mwl	Mirandese	33,736	798,507	803,673
+259	toj	Tojolabal	33,682	666,366	603,392
+260	fon	Fon	31,182	866,652	549,296
+261	nch	Central Huasteca Nahuatl	30,372	470,473	549,024
+262	ndc	Ndau	30,339	489,579	526,630
+263	ibg	Ibanag	30,297	572,127	534,006
+264	ngu	Guerrero Nahuatl	29,640	461,702	532,754
+265	urh	Urhobo	29,213	593,239	526,979
+266	kbp	Kabiyè	28,909	615,867	518,354
+267	wes	Cameroon Pidgin	28,041	641,415	496,515
+268	bum	Bulu (Cameroon)	27,873	622,714	490,542
+269	cnh	Hakha Chin	27,858	557,128	477,930
+270	bas	Basa (Cameroon)	27,629	613,848	493,245
+271	mau	Huautla Mazatec	27,411	493,893	496,940
+272	btx	Batak Karo	27,274	437,937	469,368
+273	abk	Abkhazian	27,222	351,408	483,397
+274	nba	Nyemba	27,215	553,775	468,908
+275	ksw	S'Gaw Karen	27,094	1,329,003	554,643
+276	ctu	Chol	26,360	544,787	475,801
+277	mai	Maithili	25,399	162,714	126,990
+278	sme	Northern Sami	24,617	140,379	150,190
+279	nyu	Nyungwe	24,475	419,949	426,977
+280	csn	Colombian Sign Language	23,906	472,341	465,894
+281	csb	Kashubian	23,816	153,784	157,725
+282	oke	Okpe (Southwestern Edo)	22,381	456,587	398,402
+283	bhw	Biak	22,290	367,652	380,779
+284	tzh	Tzeltal	22,285	523,994	405,145
+285	pcm	Nigerian Pidgin	21,983	463,475	392,393
+286	fse	Finnish Sign Language	21,607	298,087	396,825
+287	pso	Polish Sign Language	20,382	311,955	377,371
+288	qug	Chimborazo Highland Quichua	20,233	247,132	350,124
+289	chw	Chuwabu	17,991	253,364	299,537
+290	cce	Chopi	17,957	346,849	303,040
+291	csl	Chinese Sign Language	17,606	491,553	342,313
+292	ina	Interlingua (International Auxiliary Language Association)	16,773	152,801	148,929
+293	arn	Mapudungun	16,718	275,184	296,072
+294	ttj	Tooro	16,429	253,796	280,735
+295	gsg	German Sign Language	16,306	267,549	295,339
+296	rom	Romany	16,068	422,606	412,229
+297	chr	Cherokee	15,778	288,472	417,310
+298	syr	Syriac	15,772	217,809	416,361
+299	dop	Lukpa	15,715	558,921	416,550
+300	cop	Coptic	15,711	256,406	416,573
+301	cjp	Cabécar	15,708	648,168	401,094
+302	quw	Tena Lowland Quichua	15,673	292,826	415,605
+303	shi	Tachelhit	15,665	573,846	404,703
+304	quc	K'Iche'	15,593	618,467	412,776
+305	usp	Uspanteco	15,581	500,231	413,073
+306	amu	Guerrero Amuzgo	15,541	567,453	411,629
+307	jak	Jakun	15,521	565,010	411,376
+308	nhg	Tetelcingo Nahuatl	15,454	408,450	409,284
+309	hsb	Upper Sorbian	15,448	91,685	96,679
+310	chq	Quiotepec Chinantec	15,395	1,064,331	408,551
+311	cni	Asháninka	15,294	330,584	405,727
+312	dua	Duala	15,277	442,302	267,263
+313	gbi	Galela	14,988	623,655	398,070
+314	kmr	Northern Kurdish	14,802	272,115	259,235
+315	lam	Lamba	14,757	240,079	269,942
+316	dyu	Dyula	14,730	318,841	255,835
+317	ppk	Uma	14,675	672,340	387,644
+318	nav	Navajo	14,664	230,522	248,549
+319	cha	Chamorro	14,550	317,039	350,357
+320	rmn	Balkan Romani	14,450	256,958	239,481
+321	bts	Batak Simalungun	14,234	234,221	237,953
+322	tlh	Klingon	13,897	102,819	114,576
+323	hsh	Hungarian Sign Language	13,796	214,525	254,586
+324	glv	Manx	13,490	285,583	252,235
+325	fcs	Quebec Sign Language	13,430	268,170	238,533
+326	agr	Aguaruna	13,326	325,087	338,679
+327	ojb	Northwestern Ojibwa	13,320	290,069	354,097
+328	dik	Southwestern Dinka	13,320	383,809	354,111
+329	nij	Ngaju	13,169	213,858	222,235
+330	ake	Akawaio	13,058	544,402	327,197
+331	tyv	Tuvinian	12,990	199,681	243,947
+332	jiv	Shuar	12,901	271,591	342,865
+333	acu	Achuar-Shiwiar	12,762	373,501	327,361
+334	xmf	Mingrelian	12,690	167,843	259,004
+335	bsn	Barasana-Eduria	12,411	683,801	332,654
+336	tss	Taiwan Sign Language	12,162	356,465	236,036
+337	jbo	Lojban	11,985	91,618	85,242
+338	cse	Czech Sign Language	11,607	178,242	208,581
+339	bin	Bini	11,580	259,899	206,848
+340	sxn	Sangir	11,563	227,808	193,551
+341	gla	Scottish Gaelic	11,187	146,904	119,438
+342	mfs	Mexican Sign Language	11,030	231,366	231,452
+343	kac	Kachin	10,933	270,566	184,602
+344	kbh	Camsá	10,703	412,791	272,268
+345	rms	Romanian Sign Language	10,355	196,803	191,630
+346	svk	Slovakian Sign Language	10,024	158,006	180,593
+347	udm	Udmurt	9,322	147,306	171,878
+348	yid	Yiddish	9,110	132,320	112,423
+349	ami	Amis	9,054	184,171	174,073
+350	crh	Crimean Tatar	8,742	48,790	50,680
+351	fur	Friulian	8,535	70,721	63,476
+352	her	Herero	8,078	143,109	139,975
+353	kvk	Korean Sign Language	7,811	280,446	159,540
+354	alz	Alur	7,541	154,056	132,728
+355	gss	Greek Sign Language	7,018	135,730	138,708
+356	srd	Sardinian	6,912	73,336	65,457
+357	bzj	Belize Kriol English	6,885	135,908	119,338
+358	yue	Yue Chinese	6,704	152,857	113,146
+359	lfn	Lingua Franca Nova	6,388	49,392	46,787
+360	aar	Afar	6,336	60,314	62,572
+361	lim	Limburgan	6,203	39,173	38,816
+362	pdt	Plautdietsch	5,838	111,653	101,001
+363	mni	Manipuri	5,670	101,067	127,542
+364	mxv	Metlatónoc Mixtec	5,651	175,449	103,511
+365	sco	Scots	5,561	160,697	165,958
+366	cor	Cornish	5,548	40,280	41,655
+367	tmh	Tamashek	5,466	158,901	152,889
+368	ish	Esan	5,201	112,505	90,930
+369	kea	Kabuverdianu	5,193	101,895	89,956
+370	tsz	Purepecha	4,886	78,179	89,106
+371	mhr	Eastern Mari	4,149	24,079	23,788
+372	pot	Potawatomi	4,113	108,987	110,373
+373	aka	Akan	4,096	106,463	107,922
+374	dzo	Dzongkha	4,064	76,550	26,060
+375	prs	Dari	4,028	105,220	96,334
+376	toh	Gitonga	3,890	78,105	65,257
+377	alt	Southern Altai	3,886	53,347	70,793
+378	ile	Interlingue	3,850	27,427	29,741
+379	psr	Portuguese Sign Language	3,619	69,442	68,455
+380	kau	Kanuri	3,367	91,841	84,933
+381	ang	Old English (Ca. 450-1100)	3,243	14,717	14,129
+382	ssp	Spanish Sign Language	3,192	62,120	62,281
+383	fuv	Nigerian Fulfulde	3,088	83,338	83,391
+384	nus	Nuer	3,073	120,476	83,366
+385	din	Dinka	3,067	101,158	83,486
+386	bod	Tibetan	2,981	87,624	35,072
+387	arq	Algerian Arabic	2,933	41,376	45,002
+388	fsl	French Sign Language	2,919	61,263	55,624
+389	vol	Volapük	2,737	15,010	18,884
+390	cbk	Chavacano	2,428	17,380	17,029
+391	dtp	Kadazan Dusun	1,845	13,012	13,023
+392	csg	Chilean Sign Language	1,687	27,143	27,960
+393	men	Mende (Sierra Leone)	1,660	36,528	28,466
+394	gom	Goan Konkani	1,601	41,639	46,209
+395	pam	Pampanga	1,516	10,362	12,016
+396	ava	Avaric	1,325	11,624	11,913
+397	bug	Buginese	1,324	12,377	13,193
+398	mnw	Mon	1,282	90,294	69,035
+399	kha	Khasi	1,277	9,156	8,623
+400	bam	Bambara	1,273	11,180	13,552
+401	zsm	Standard Malay	1,270	10,317	11,410
+402	gos	Gronings	1,171	5,902	6,188
+403	san	Sanskrit	1,151	5,674	7,544
+404	min	Minangkabau	1,143	28,717	30,987
+405	ase	American Sign Language	1,128	16,016	16,570
+406	sot	Southern Sotho	1,120	26,838	24,722
+407	kas	Kashmiri	890	5,629	6,387
+408	tet	Tetum	889	26,037	24,904
+409	psp	Philippine Sign Language	880	22,876	22,876
+410	vsl	Venezuelan Sign Language	837	19,100	17,757
+411	csf	Cuba Sign Language	792	13,283	14,052
+412	nst	Tase Naga	766	5,756	4,777
+413	lad	Ladino	762	4,523	4,769
+414	roh	Romansh	695	7,022	7,516
+415	ota	Ottoman Turkish (1500-1928)	688	4,032	4,573
+416	hoc	Ho	622	3,014	3,473
+417	zza	Zaza	596	3,479	3,767
+418	grc	Ancient Greek (To 1453)	593	3,925	5,024
+419	szl	Silesian	588	3,850	4,554
+420	prl	Peruvian Sign Language	581	9,375	10,363
+421	frp	Arpitan	573	2,675	2,394
+422	wae	Walser	556	2,862	3,022
+423	ace	Achinese	491	3,822	3,588
+424	grn	Guarani	477	5,242	7,043
+425	bfi	British Sign Language	442	7,664	9,020
+426	cos	Corsican	438	12,566	11,985
+427	inh	Ingush	418	6,656	7,065
+428	bvl	Bolivian Sign Language	403	6,824	7,286
+429	nan	Min Nan Chinese	403	14,601	11,491
+430	swh	Swahili (Individual)	371	1,851	2,542
+431	rup	Macedo-Romanian	362	6,375	6,164
+432	gor	Gorontalo	358	10,126	11,615
+433	zpa	Lachiguiri Zapotec	356	6,320	6,431
+434	vec	Venetian	355	3,559	3,172
+435	azb	South Azerbaijani	343	9,296	12,112
+436	zib	Zimbabwe Sign Language	312	9,002	8,503
+437	orv	Old Russian	309	1,737	2,124
+438	lzh	Literary Chinese	303	5,381	3,886
+439	pms	Piemontese	302	3,360	2,646
+440	inl	Indonesian Sign Language	287	4,294	4,995
+441	xal	Kalmyk	285	1,659	2,070
+442	max	North Moluccan Malay	273	2,006	1,880
+443	diq	Dimli (Individual)	265	6,451	10,707
+444	gsw	Swiss German	258	2,462	2,693
+445	awa	Awadhi	252	1,323	1,336
+446	got	Gothic	244	8,491	3,273
+447	mzy	Mozambican Sign Language	242	4,337	4,413
+448	ary	Moroccan Arabic	240	6,929	9,113
+449	ltg	Latgalian	219	2,343	2,759
+450	nov	Novial	218	1,451	1,470
+451	hrx	Hunsrik	214	1,307	1,253
+452	asf	Auslan	213	3,125	3,149
+453	prg	Prussian	213	1,526	1,717
+454	sat	Santali	209	9,092	9,473
+455	tzl	Talossan	205	1,050	1,007
+456	jam	Jamaican Creole English	201	7,542	7,713
+457	frr	Northern Frisian	197	1,337	1,461
+458	shn	Shan	193	4,072	1,174
+459	avk	Kotava	170	991	1,285
+460	pli	Pali	163	1,278	1,912
+461	esn	Salvadoran Sign Language	154	2,909	3,093
+462	haw	Hawaiian	153	2,872	2,709
+463	krl	Karelian	136	664	694
+464	che	Chechen	128	596	621
+465	chu	Church Slavic	128	1,323	1,669
+466	mad	Madurese	126	4,428	5,203
+467	new	Newari	122	4,047	4,169
+468	lld	Ladin	120	972	826
+469	hds	Honduras Sign Language	120	2,355	2,406
+470	cho	Choctaw	119	740	785
+471	sah	Yakut	117	2,115	3,110
+472	zam	Miahuatlán Zapotec	115	1,432	1,871
+473	rue	Rusyn	113	480	683
+474	qya	Quenya	109	476	649
+475	dsb	Lower Sorbian	107	1,414	1,879
+476	bzt	Brithenig	106	642	591
+477	ldn	Láadan	105	646	616
+478	npi	Nepali (Individual)	102	404	489
+479	hai	Haida	101	841	1,193
+480	gcf	Guadeloupean Creole French	100	593	586
+481	pih	Pitcairn-Norfolk	98	2,439	2,229
+482	bho	Bhojpuri	95	2,342	2,267
+483	pnb	Western Panjabi	95	3,629	3,227
+484	lij	Ligurian	93	815	734
+485	bxr	Russia Buriat	90	3,112	3,986
+486	tpw	Tupí	87	520	518
+487	ksh	Kölsch	86	1,893	1,669
+488	pys	Paraguayan Sign Language	84	913	1,073
+489	hif	Fiji Hindi	83	1,256	1,650
+490	nog	Nogai	82	336	475
+491	mzn	Mazanderani	81	2,732	3,507
+492	egl	Emilian	80	493	450
+493	lut	Lushootseed	79	427	449
+494	mus	Creek	75	700	662
+495	mww	Hmong Daw	74	499	413
+496	gsm	Guatemalan Sign Language	71	1,293	1,419
+497	tcy	Tulu	68	2,359	2,707
+498	afb	Gulf Arabic	64	292	360
+499	bal	Baluchi	62	345	326
+500	myv	Erzya	61	1,617	1,970
+501	ext	Extremaduran	61	580	620
+502	sgs	Samogitian	59	540	785
+503	enm	Middle English (1100-1500)	59	374	381
+504	miq	Mískito	58	151	128
+505	zsl	Zambian Sign Language	55	1,588	1,292
+506	moh	Mohawk	54	479	372
+507	pdc	Pennsylvania German	54	495	517
+508	fkv	Kven Finnish	54	525	614
+509	ipk	Inupiaq	52	552	600
+510	sjn	Sindarin	49	229	282
+511	ins	Indian Sign Language	48	441	511
+512	rif	Tarifit	46	209	239
+513	dty	Dotyali	46	1,596	1,426
+514	cre	Cree	46	779	1,620
+515	ike	Eastern Canadian Inuktitut	44	140	247
+516	sux	Sumerian	43	246	217
+517	sma	Southern Sami	43	175	214
+518	tly	Talysh	42	145	202
+519	shs	Shuswap	40	240	207
+520	pmy	Papuan Malay	39	157	167
+521	brx	Bodo (India)	37	138	168
+522	nbl	South Ndebele	34	267	260
+523	swg	Swabian	34	272	268
+524	ecs	Ecuadorian Sign Language	34	279	338
+525	tmr	Jewish Babylonian Aramaic (Ca. 200-1200 Ce)	34	252	452
+526	gbm	Garhwali	33	155	138
+527	mgm	Mambae	33	282	307
+528	nap	Neapolitan	31	301	262
+529	hup	Hupa	31	417	345
+530	pnt	Pontic	29	598	588
+531	liv	Liv	29	150	176
+532	atj	Atikamekw	29	865	805
+533	ppl	Pipil	29	163	208
+534	glk	Gilaki	28	1,391	1,572
+535	zgh	Standard Moroccan Tamazight	27	392	332
+536	lkt	Lakota	27	164	179
+537	ain	Ainu (Japan)	26	117	154
+538	aln	Gheg Albanian	25	133	134
+539	pau	Palauan	25	121	119
+540	csr	Costa Rican Sign Language	25	237	239
+541	ood	Tohono O'Odham	24	198	149
+542	bvy	Baybayanon	23	158	165
+543	vls	Vlaams	21	627	579
+544	rap	Rapanui	21	130	99
+545	rmy	Vlax Romani	20	837	774
+546	frm	Middle French (Ca. 1400-1600)	18	209	222
+547	scn	Sicilian	16	200	266
+548	apc	North Levantine Arabic	16	75	110
+549	nqo	N'Ko	16	983	479
+550	nau	Nauru	16	74	104
+551	wkd	Wakde	16	125	123
+552	zha	Zhuang	15	497	519
+553	kjh	Khakas	15	60	75
+554	shy	Tachawit	15	65	86
+555	koi	Komi-Permyak	14	68	85
+556	ave	Avestan	14	122	159
+557	nlv	Orizaba Nahuatl	14	137	154
+558	ngt	Kriang	14	86	92
+559	bua	Buriat	14	61	77
+560	non	Old Norse	13	134	136
+561	trv	Taroko	12	98	86
+562	sfs	South African Sign Language	12	290	338
+563	akl	Aklanon	12	53	48
+564	acm	Mesopotamian Arabic	11	63	88
+565	aoz	Uab Meto	11	51	55
+566	kpv	Komi-Zyrian	11	32	40
+567	phn	Phoenician	11	172	89
+568	afh	Afrihili	10	46	54
+569	mdf	Moksha	9	89	97
+570	laa	Southern Subanen	9	153	150
+571	dws	Dutton World Speedwords	9	37	48
+572	hbo	Ancient Hebrew	8	74	126
+573	kum	Kumyk	8	33	51
+574	ady	Adyghe	8	53	102
+575	stq	Saterfriesisch	8	56	58
+576	vro	Võro	8	75	92
+577	cjy	Jinyu Chinese	8	70	52
+578	mvv	Tagal Murut	8	33	40
+579	mic	Mi'Kmaq	7	23	33
+580	drt	Drents	6	48	52
+581	oar	Old Aramaic (Up To 700 Bce)	6	61	71
+582	sml	Central Sama	6	21	15
+583	dng	Dungan	6	27	32
+584	fuc	Pulaar	6	21	26
+585	luy	Luyia	5	62	92
+586	jpa	Jewish Palestinian Aramaic	5	26	50
+587	izh	Ingrian	5	18	19
+588	lsp	Panamanian Sign Language	5	38	53
+589	hyw	Western Armenian	5	491	584
+590	zea	Zeeuws	5	323	304
+591	pfl	Pfaelzisch	5	168	191
+592	tmw	Temuan	5	23	34
+593	hak	Hakka Chinese	4	25	20
+594	osp	Old Spanish	4	26	26
+595	kom	Komi	4	143	123
+596	lez	Lezghian	4	108	75
+597	pal	Pahlavi	4	42	51
+598	hnj	Hmong Njua	3	20	15
+599	gan	Gan Chinese	3	26	18
+600	sdh	Southern Kurdish	2	11	14
+601	ofs	Old Frisian	2	16	15
+602	jdt	Judeo-Tat	2	6	9
+603	byn	Bilin	2	3	3
+604	ncs	Nicaraguan Sign Language	2	10	10
+605	bpy	Bishnupriya	2	55	57
+606	hsn	Xiang Chinese	2	14	10
+607	aeb	Tunisian Arabic	2	10	16
+608	tkl	Tokelau	1	7	6
+609	cku	Koasati	1	20	48
+610	chy	Cheyenne	1	59	54
+611	tts	Northeastern Thai	1	3	5
+612	tig	Tigre	1	3	4
+613	gag	Gagauz	1	5	5
+614	nhn	Central Nahuatl	1	3	3
+615	mrj	Western Mari	1	64	60
+616	lbe	Lak	1	56	55
+617	lrc	Northern Luri	1	42	54
+618	arc	Official Aramaic (700-300 Bce)	1	2	2
+619	chn	Chinook Jargon	1	7	6
+620	iii	Sichuan Yi	1	2	4
+621	ckt	Chukot	1	3	5

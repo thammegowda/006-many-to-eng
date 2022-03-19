@@ -1,5 +1,5 @@
-=  Many-to-English Translation : RTG Demo
-@ USC Information Sciences Institute, Natural Language Group
+include::header.adoc[]
+
 :doctype: article
 :encoding: utf-8
 :lang: en
@@ -15,20 +15,20 @@
 :description: RTG Many-to-English Translation Demo
 :keywords: RTG, Translation, Machine Translation, NLP Demo, Low Resource Languages
 
+==  Many-to-English Translation : RTG Demo
+
 https://www.ibidemgroup.com/edu/traduccion-machine-translation-datos-modelos/[_Read this in Spanish |Lee esto en Español_^]
 
 There are more than 7000 languages in the world, but most translation research efforts have targeted a few high resource languages.
-Commercial translation systems support only one hundred languages or fewer, and do not make these models available for transfer to low resource languages.
-In this work, we present useful tools for machine translation research: link:https://github.com/thammegowda/mtdata/[MTData^], link:https://isi-nlp.github.io/nlcodec/[NLCodec^],
-and link:https://isi-nlp.github.io/rtg/[Reader-Translator-Generator (RTG)^].
-We demonstrate their usefulness by creating a multilingual NMT model capable of translating from 500 source languages to English.
+We create a multilingual NMT model capable of translating from 500 source languages to English.
 We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
 
 == Links
 
-* [big red yellow-background]*Demo: link:v1/[👉🏼Many-to-English translation👈🏼🔥^]*
-* link:data-v1.html[Download datasets (v1)^]
-* link:models/[Download trained models^]
+* [big red yellow-background]*Demo (v1) : link:v1/[👉🏼500-to-English👈🏼🔥^]*
+* [big red yellow-background]*Demo (v2) : link:v1/[👉🏼600-to-English👈🏼🔥^]*
+* link:data-v1.html[Dataset (v1)^] | link:data-v2.html[Dataset (v2)^]
+* link:models/[Download models^]
 * Get paper: https://aclanthology.org/2021.acl-demo.37/ link:https://aclanthology.org/2021.acl-demo.37.pdf[Get PDF]
 * Tools:
 ** MTData: https://github.com/thammegowda/mtdata/ +
@@ -37,7 +37,9 @@ We make this multilingual model readily downloadable and usable as a service, or
    `pip install nlcodec`
 ** RTG: https://isi-nlp.github.io/rtg/ +
     `pip install rtg`
-* Scripts, tables, and charts: https://github.com/thammegowda/006-many-to-eng
+* Scripts, tables, and charts
+    ** v1: https://github.com/thammegowda/006-many-to-eng
+    ** v2: https://github.com/thammegowda/016-many-eng-v2
 
 == Using Pretrained Models
 
@@ -46,7 +48,9 @@ Step 1. Download image and run.
 [source, bash]
 ----
 # pick the latest image from https://hub.docker.com/repository/docker/tgowda/rtg-model
-IMAGE=tgowda/rtg-model:500toEng-v1
+IMAGE=tgowda/rtg-model:500toEng-v1  # v1 model, 500-Eng translation, amd64 arch
+IMAGE=600toEng-v2.0  # v2, 600-Eng
+IMAGE=600toEng-v2.0-arm64 # v2 for arm64/aarch64 such as Apple Silicon (M1*)
 
 # To run without using GPU; requires about 5 to 6GB CPU RAM
 docker run --rm -i -p 6060:6060 $IMAGE
@@ -68,7 +72,11 @@ If conda is missing in your system, link:https://docs.conda.io/en/latest/minicon
 
 conda create -n rtg python=3.7
 conda activate rtg
-pip install rtg==0.5.0  # install rtg and its dependencies
+
+pip install rtg==0.5.0  # for v1 model
+# or
+pip install rtg==0.7    # for v2 models
+
 conda install -c conda-forge uwsgi  # needed to deploy service
 ----
 
@@ -77,7 +85,11 @@ conda install -c conda-forge uwsgi  # needed to deploy service
 [source, bash]
 ----
 # Pick the latest version
-MODEL=rtg500eng-tfm9L6L768d-bsz720k-stp200k-ens05.tgz
+
+MODEL=rtg500eng-tfm9L6L768d-bsz720k-stp200k-ens05.tgz # v1
+MODEL=many-eng-v2.0-rtg600eng1024d_ful74k.tgz # # v2.0
+# MODEL=many-eng-v2.1-rtg600eng1024d_ful38k_ftclip1Maug35k.tgz  # v2.1 code switching support
+
 # Download
 wget http://rtg.isi.edu/many-eng/models/$MODEL
 # Extract
