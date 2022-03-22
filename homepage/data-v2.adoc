@@ -35,7 +35,7 @@ https://github.com/thammegowda/016-many-eng-v2/tree/main/data
 
 
 .V2 Statistics (link:img/lang-stats-v2.pdf[Get PDF])
-image::img/lang-stats-v2.pdf[]
+image::img/lang-stats-v2.png[]
 
 
 .Many-English dataset (v2) statistics
