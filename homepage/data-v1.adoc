@@ -41,6 +41,10 @@ They should have same number of lines. Line number is the way to cross-reference
 
 You may also prepare these datasets from scratch or revise cleaning mechanisms starting from `train.raw.tsv.gz`. The `prep.tgz` file has `datatprep.ipynb` notebook that contains steps to download, tokenize, deduplicate and filter our bad records.
 
+.V1 Statistics (link:img/lang-stats-v1.pdf[Get PDF])
+image::img/lang-stats-v1.png[]
+
+
 .Statistics (v1)
 [cols=">,^,<,>,>,>", options="header",format="tsv"]
 |===

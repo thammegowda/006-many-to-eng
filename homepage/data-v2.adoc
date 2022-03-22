@@ -16,6 +16,9 @@ include::header.adoc[]
 :keywords: RTG, Translation, Machine Translation, NLP dataset, Low Resource Languages
 :table-stripes: even
 
+
+
+
 ==  Many-to-English: Data v2 and Statistics
 
 Due to license and copyright issues, we are unable to distribute the v2 data.
@@ -29,6 +32,10 @@ mtdata get-recipe -ri mul-eng-v2 -o mul-eng-v2
 ----
 For dataset preparation, checkout instructions and scripts at
 https://github.com/thammegowda/016-many-eng-v2/tree/main/data
+
+
+.V1 Statistics (link:img/lang-stats-v2.pdf[Get PDF])
+image::img/lang-stats-v2.png[]
 
 
 .Many-English dataset (v2) statistics

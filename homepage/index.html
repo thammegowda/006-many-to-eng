@@ -24,7 +24,7 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/isi-nlp/" target="_blank" rel="noopener"><span class="image"><img src="cutelabname.png" alt="64" width="64"></span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/isi-nlp/" target="_blank" rel="noopener"><span class="image"><img src="img/cutelabname.png" alt="64" width="64"></span></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="index.html">Home</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="v1">Demo v1</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="v2">Demo v2</a></p></td>
@@ -52,13 +52,10 @@ We make this multilingual model readily downloadable and usable as a service, or
 <div class="ulist">
 <ul>
 <li>
-<p><strong class="big red yellow-background">Demo (v1) : <a href="v1/" target="_blank" rel="noopener">👉🏼500-to-English👈🏼🔥</a></strong></p>
+<p>Demos: <strong class="big red yellow-background">V1: <a href="v1/" target="_blank" rel="noopener">500→English🔥</a></strong> | <strong class="big red yellow-background">V2: <a href="v1/" target="_blank" rel="noopener">600→English🔥</a></strong></p>
 </li>
 <li>
-<p><strong class="big red yellow-background">Demo (v2) : <a href="v1/" target="_blank" rel="noopener">👉🏼600-to-English👈🏼🔥</a></strong></p>
-</li>
-<li>
-<p><a href="data-v1.html" target="_blank" rel="noopener">Dataset (v1)</a> | <a href="data-v2.html" target="_blank" rel="noopener">Dataset (v2)</a></p>
+<p><a href="data-v1.html" target="_blank" rel="noopener">V1 Dataset</a> | <a href="data-v2.html" target="_blank" rel="noopener">V2 Dataset</a></p>
 </li>
 <li>
 <p><a href="models/" target="_blank" rel="noopener">Download models</a></p>
@@ -112,10 +109,10 @@ We make this multilingual model readily downloadable and usable as a service, or
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash"># pick the latest image from https://hub.docker.com/repository/docker/tgowda/rtg-model
-IMAGE=tgowda/rtg-model:500toEng-v1  # v1 model, 500-Eng translation, amd64 arch
-IMAGE=600toEng-v2.0  # v2, 600-Eng
-IMAGE=600toEng-v2.0-arm64 # v2 for arm64/aarch64 such as Apple Silicon (M1*)
+<pre class="highlight"><code class="language-bash" data-lang="bash"># Select the model version tag https://hub.docker.com/repository/docker/tgowda/rtg-model
+IMAGE=tgowda/rtg-model:500toEng-v1       # v1 model, 500-Eng translation, amd64 arch
+IMAGE=tgowda/rtg-model:600toEng-v2.0      # v2, 600-Eng
+IMAGE=tgowda/rtg-model:600toEng-v2.0-arm64 # v2 for arm64/aarch64 such as Apple Silicon (M1*)
 
 # To run without using GPU; requires about 5 to 6GB CPU RAM
 docker run --rm -i -p 6060:6060 $IMAGE
@@ -296,7 +293,7 @@ Hence, learning rate has to be just right; refer to <code>conf.yml</code> files 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-03-19 03:18:04 -0700
+Last updated 2022-03-21 17:43:52 -0700
 </div>
 </div>
 </body>

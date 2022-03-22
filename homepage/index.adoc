@@ -25,9 +25,8 @@ We make this multilingual model readily downloadable and usable as a service, or
 
 == Links
 
-* [big red yellow-background]*Demo (v1) : link:v1/[👉🏼500-to-English👈🏼🔥^]*
-* [big red yellow-background]*Demo (v2) : link:v1/[👉🏼600-to-English👈🏼🔥^]*
-* link:data-v1.html[Dataset (v1)^] | link:data-v2.html[Dataset (v2)^]
+* Demos: [big red yellow-background]*V1: link:v1/[500→English🔥^]* | [big red yellow-background]*V2: link:v1/[600→English🔥^]*
+* link:data-v1.html[V1 Dataset^] | link:data-v2.html[V2 Dataset^]
 * link:models/[Download models^]
 * Get paper: https://aclanthology.org/2021.acl-demo.37/ link:https://aclanthology.org/2021.acl-demo.37.pdf[Get PDF]
 * Tools:
@@ -47,10 +46,10 @@ We make this multilingual model readily downloadable and usable as a service, or
 Step 1. Download image and run.
 [source, bash]
 ----
-# pick the latest image from https://hub.docker.com/repository/docker/tgowda/rtg-model
-IMAGE=tgowda/rtg-model:500toEng-v1  # v1 model, 500-Eng translation, amd64 arch
-IMAGE=600toEng-v2.0  # v2, 600-Eng
-IMAGE=600toEng-v2.0-arm64 # v2 for arm64/aarch64 such as Apple Silicon (M1*)
+# Select the model version tag https://hub.docker.com/repository/docker/tgowda/rtg-model
+IMAGE=tgowda/rtg-model:500toEng-v1       # v1 model, 500-Eng translation, amd64 arch
+IMAGE=tgowda/rtg-model:600toEng-v2.0      # v2, 600-Eng
+IMAGE=tgowda/rtg-model:600toEng-v2.0-arm64 # v2 for arm64/aarch64 such as Apple Silicon (M1*)
 
 # To run without using GPU; requires about 5 to 6GB CPU RAM
 docker run --rm -i -p 6060:6060 $IMAGE
