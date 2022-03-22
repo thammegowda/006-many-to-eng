@@ -34,8 +34,8 @@ For dataset preparation, checkout instructions and scripts at
 https://github.com/thammegowda/016-many-eng-v2/tree/main/data
 
 
-.V1 Statistics (link:img/lang-stats-v2.pdf[Get PDF])
-image::img/lang-stats-v2.png[]
+.V2 Statistics (link:img/lang-stats-v2.pdf[Get PDF])
+image::img/lang-stats-v2.pdf[]
 
 
 .Many-English dataset (v2) statistics
