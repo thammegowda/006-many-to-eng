@@ -38,7 +38,7 @@ https://github.com/thammegowda/016-many-eng-v2/tree/main/data
 image::img/lang-stats-v2.png[]
 
 
-.Many-English dataset (v2) statistics
+.Many-English V2 training data statistics (link:data-v2.tsv[Get TSV])
 [cols=">,^,<,>,>,>", options="header",format=tsv,stripes=even,%autowidth]
 [%autowidth]
 |===

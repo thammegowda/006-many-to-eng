@@ -45,7 +45,7 @@ You may also prepare these datasets from scratch or revise cleaning mechanisms s
 image::img/lang-stats-v1.png[]
 
 
-.Statistics (v1)
+.Many-English V1 training data statistics (link:data-v1.tsv[Get TSV])
 [%autowidth]
 [cols=">,^,<,>,>,>", options="header",format="tsv"]
 |===
