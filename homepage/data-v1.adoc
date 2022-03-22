@@ -46,6 +46,7 @@ image::img/lang-stats-v1.png[]
 
 
 .Statistics (v1)
+[%autowidth]
 [cols=">,^,<,>,>,>", options="header",format="tsv"]
 |===
 include::data-v1.tsv[]

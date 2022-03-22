@@ -39,7 +39,8 @@ image::img/lang-stats-v2.png[]
 
 
 .Many-English dataset (v2) statistics
-[cols=">,^,<,>,>,>", options="header",format=tsv,stripes=even]
+[cols=">,^,<,>,>,>", options="header",format=tsv,stripes=even,%autowidth]
+[%autowidth]
 |===
 include::data-v2.tsv[]
 |===
