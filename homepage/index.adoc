@@ -25,7 +25,7 @@ We make this multilingual model readily downloadable and usable as a service, or
 
 == Links
 
-* Demos: [big red yellow-background]*V1: link:v1/[500→English🔥^]* | [big red yellow-background]*V2: link:v1/[600→English🔥^]*
+* Demos: [big red yellow-background]*V1: link:v1/[500→English🔥^]* | [big red yellow-background]*V2: link:v2/[600→English🔥^]*
 * link:data-v1.html[V1 Dataset^] | link:data-v2.html[V2 Dataset^]
 * link:models/[Download models^]
 * Get paper: https://aclanthology.org/2021.acl-demo.37/ link:https://aclanthology.org/2021.acl-demo.37.pdf[Get PDF]
