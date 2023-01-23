@@ -23,6 +23,10 @@ There are more than 7000 languages in the world, but most translation research e
 We create a multilingual NMT model capable of translating from 500 source languages to English.
 We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
 
+
+NOTE: The demo hosted at http://rtg.isi.edu is down (TG has left USC/ISI and the compute allocated to his account is removed). Please use docker images for RTG pretrained models and OPUS mirror for prepared dataset.
+
+
 == Links
 
 * Demos: [big red yellow-background]*V1: link:v1/[500→English🔥^]* | [big red yellow-background]*V2: link:v2/[600→English🔥^]*
