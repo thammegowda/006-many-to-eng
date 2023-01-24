@@ -2,5 +2,5 @@
 # Many-to-English Machine Translation Tools, Data, and Pretrained Models
 
 * Paper: https://arxiv.org/pdf/2104.00290.pdf
-* Demo: http://rtg.isi.edu/many-eng/ 
+* Demo: ~~http://rtg.isi.edu/many-eng/~~ http://gowda.ai/006-many-to-eng/
   * Read in Spanish: https://www.ibidemgroup.com/edu/traduccion-machine-translation-datos-modelos/
