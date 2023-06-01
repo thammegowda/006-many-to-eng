@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
-<title>Many-to-English Translation : RTG Demo</title>
+<title>Many-to-English Translation: RTG Demo</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
 </head>
@@ -14,27 +14,9 @@
 </div>
 <div id="content">
 <table class="tableblock frame-none grid-none stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/isi-nlp/" target="_blank" rel="noopener"><span class="image"><img src="img/cutelabname.png" alt="64" width="64"></span></a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="index.html">Home</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="v1">Demo v1</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="v2">Demo v2</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="data-v1.html">Data v1</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="data-v2.html">Data v2</a></p></td>
-</tr>
-</tbody>
 </table>
 <div class="sect1">
-<h2 id="_many_to_english_translation_rtg_demo">Many-to-English Translation : RTG Demo</h2>
+<h2 id="_many_to_english_translation_rtg_demo">Many-to-English Translation: RTG Demo</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://www.ibidemgroup.com/edu/traduccion-machine-translation-datos-modelos/" target="_blank" rel="noopener"><em>Read this in Spanish |Lee esto en Español</em></a></p>
@@ -51,7 +33,7 @@ We make this multilingual model readily downloadable and usable as a service, or
 <div class="title">Note</div>
 </td>
 <td class="content">
-The demo hosted at <a href="http://rtg.isi.edu" class="bare">rtg.isi.edu</a> is down (TG has left USC/ISI and the compute allocated to his account is removed). Please use docker images for RTG pretrained models and OPUS mirror for prepared dataset.
+The demo hosted at <a href="http://rtg.isi.edu" class="bare">rtg.isi.edu</a> is down. Please use <a href="#docker">Docker images</a> for accessing pretrained models.
 </td>
 </tr>
 </table>
@@ -63,9 +45,6 @@ The demo hosted at <a href="http://rtg.isi.edu" class="bare">rtg.isi.edu</a> is 
 <div class="sectionbody">
 <div class="ulist">
 <ul>
-<li>
-<p>Demos: <strong class="big red yellow-background">V1: <a href="v1/" target="_blank" rel="noopener">500→English🔥</a></strong> | <strong class="big red yellow-background">V2: <a href="v2/" target="_blank" rel="noopener">600→English🔥</a></strong></p>
-</li>
 <li>
 <p><a href="data-v1.html" target="_blank" rel="noopener">V1 Dataset</a> | <a href="data-v2.html" target="_blank" rel="noopener">V2 Dataset</a></p>
 </li>
@@ -115,7 +94,7 @@ The demo hosted at <a href="http://rtg.isi.edu" class="bare">rtg.isi.edu</a> is 
 <h2 id="_using_pretrained_models">Using Pretrained Models</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_option_1_using_docker">Option 1: Using Docker</h3>
+<h3 id="docker">Option 1: Using Docker</h3>
 <div class="paragraph">
 <p>Step 1. Download image and run.</p>
 </div>
@@ -145,12 +124,24 @@ Docker manager may have memory and CPU core constrain enforced on your host. The
 </tr>
 </table>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+View all available models at <a href="https://hub.docker.com/repository/docker/tgowda/rtg-model" class="bare">hub.docker.com/repository/docker/tgowda/rtg-model</a>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>When the docker image runs successfully, you may access the translation service at <code><a href="http://localhost:6060/" class="bare">localhost:6060/</a></code>. No data would be shared with any cloud services.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_option_2_without_using_docker">Option 2: Without using Docker</h3>
+<h3 id="nodocker">Option 2: Without using Docker</h3>
 <div class="paragraph">
 <p><strong>Step 1:</strong> Setup a <code>conda</code> environment and install <code>rtg</code> library.<br>
 If conda is missing in your system, <a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank" rel="noopener">please install miniconda</a> to get started.</p>
@@ -310,7 +301,7 @@ To make updates to this site, send pull request to that Github repo.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-01-23 13:00:40 -0800
+Last updated 2023-05-31 20:16:00 -0700
 </div>
 </div>
 </body>

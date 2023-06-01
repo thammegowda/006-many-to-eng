@@ -15,7 +15,7 @@ include::header.adoc[]
 :description: RTG Many-to-English Translation Demo
 :keywords: RTG, Translation, Machine Translation, NLP Demo, Low Resource Languages
 
-==  Many-to-English Translation : RTG Demo
+==  Many-to-English Translation: RTG Demo
 
 https://www.ibidemgroup.com/edu/traduccion-machine-translation-datos-modelos/[_Read this in Spanish |Lee esto en Español_^]
 
@@ -23,13 +23,10 @@ There are more than 7000 languages in the world, but most translation research e
 We create a multilingual NMT model capable of translating from 500 source languages to English.
 We make this multilingual model readily downloadable and usable as a service, or as a parent model for transfer-learning to even lower-resource languages.
 
-
-NOTE: The demo hosted at http://rtg.isi.edu is down (TG has left USC/ISI and the compute allocated to his account is removed). Please use docker images for RTG pretrained models and OPUS mirror for prepared dataset.
-
+NOTE: The demo hosted at http://rtg.isi.edu is down. Please use link:#docker[Docker images] for accessing pretrained models.
 
 == Links
-
-* Demos: [big red yellow-background]*V1: link:v1/[500→English🔥^]* | [big red yellow-background]*V2: link:v2/[600→English🔥^]*
+//* Demos: [big red yellow-background]*V1: link:v1/[500→English🔥^]* | [big red yellow-background]*V2: link:v2/[600→English🔥^]*
 * link:data-v1.html[V1 Dataset^] | link:data-v2.html[V2 Dataset^]
 * link:models/[Download models^]
 * Get paper: https://aclanthology.org/2021.acl-demo.37/ link:https://aclanthology.org/2021.acl-demo.37.pdf[Get PDF]
@@ -46,7 +43,10 @@ NOTE: The demo hosted at http://rtg.isi.edu is down (TG has left USC/ISI and the
 
 == Using Pretrained Models
 
+[#docker]
 === Option 1: Using Docker
+
+
 Step 1. Download image and run.
 [source, bash]
 ----
@@ -64,8 +64,12 @@ docker run --gpus '"device=0"' --rm -i -p 6060:6060 $IMAGE
 //This docker image has everything -- Pytorch and rtg libs as well as model -- required to run a translation service locally.
 WARNING: Docker manager may have memory and CPU core constrain enforced on your host. The above image should be permitted to use at least 6GB RAM. To adjust the RAM and CPU cores for docker image, refer to the instructions on web; e.g. https://stackoverflow.com/a/50770267/1506477
 
+NOTE: View all available models at https://hub.docker.com/repository/docker/tgowda/rtg-model
+
+
 When the docker image runs successfully, you may access the translation service at `http://localhost:6060/`. No data would be shared with any cloud services.
 
+[#nodocker]
 === Option 2: Without using Docker
 
 **Step 1:** Setup a `conda` environment and install `rtg` library. +
