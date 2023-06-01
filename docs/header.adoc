@@ -1,4 +1,3 @@
-:doctype: article
 :linkcss:
 
 [frame=none,grid=none,cols="2, 2,1,1,1,1"]
